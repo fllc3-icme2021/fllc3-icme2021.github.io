@@ -67,7 +67,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 d-flex">
                     <a href="index.html" class="site-logo">
-                        Learning from Imperfect Data (LID)
+                        Facial Landmark Localization (FLL)
                     </a>
                     <a href="#"
                        class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
@@ -101,14 +101,14 @@
                             <li>
                                 <a href="index.html#dates" class="nav-link text-left">Important dates</a>
                             </li>
+<!--                            <li>-->
+<!--                                <a href="index.html#schedule" class="nav-link text-left">Schedule</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="index.html#papers" class="nav-link text-left">Papers</a>-->
+<!--                            </li>-->
                             <li>
-                                <a href="index.html#schedule" class="nav-link text-left">Schedule</a>
-                            </li>
-                            <li>
-                                <a href="index.html#papers" class="nav-link text-left">Papers</a>
-                            </li>
-                            <li>
-                                <a href="index.html#people" class="nav-link text-left">Organizers</a>
+                                <a href="index.html#organizer" class="nav-link text-left">Organizers</a>
                             </li>
                             <!--               <li class="nav-item dropdown">
                                               <a class="nav-link dropdown-toggle" href="challenge.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -119,11 +119,20 @@
                                            <a class="dropdown-item" href="challenge.html#challenge2">Scene parsing with point-based supervision</a>
                                          </div>
                                          </li> -->
+<!--                            <li>-->
+<!--                                <a href="challenge.html" class="nav-link text-left">Challenge</a>-->
+<!--                            </li>-->
+
                             <li>
-                                <a href="challenge.html" class="nav-link text-left">Challenge</a>
+                                <a href="index.html#datasets" class="nav-link text-left">Datasets</a>
                             </li>
+
+                            <li>
+                                <a href="index.html#criteria" class="nav-link text-left">criteria</a>
+                            </li>
+
                              <li>
-                                <a href="challenge.html#awards" class="nav-link text-left">Awards</a>
+                                <a href="index.html" class="nav-link text-left">Awards</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -132,7 +141,8 @@
                                     Previous
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="LID2019">LID 2019</a>
+                                    <a class="dropdown-item" href="https://fllc-icpr2020.github.io/dataset/">FLLC2_ICPR2020</a>
+                                    <a class="dropdown-item" href="https://facial-landmarks-localization-challenge.github.io/#index">FLLC1_ICME2019</a>
                                 </div>
                             </li>
                         </ul>
@@ -165,345 +175,339 @@
     <div class="container">
         <div class="row">
              <div class="col-lg-12" id="schedule">
-                 <p style="text-align: center">Please feel free to contact us if you have any suggestions to improve our workshop! &nbsp&nbsp <strong>lidworkshopcvpr@gmail.com</strong> </p>
-                <div class="section-title">
-                    <h2>Schedule</h2>
-                </div>
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <table class="table  table-hover" style="font-size:14px">
-                        <thead>
-                        <tr>
-                            <th scope="col"> Date    </th>
-                            <th scope="col"> June 14 Sunday 2020 <br/>(Pacific Time, SF Time) </th>
-                            <th scope="col"> Speaker</th>
-                            <th scope="col"> Topic</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>8:30-8:40</td>
-                            <td>Research Scientist at Stealth Mode AI Startup</td>
-                            <td>Shuai Zheng</td>
-                            <td>Opening Remark [<a href="slides/lidworkshopcvpr-opening.pdf">slide</a>][<a href="https://youtu.be/ve8NCkP2GbY">video</a>][<a href="https://www.bilibili.com/video/BV1BV41167kK">bilibili</a>]</td>
-                        </tr>
-                        <tr>
-                            <td>8:40-9:10</td>
-                            <td>Professor at Johns Hopkins University</td>
-                            <td>Alan Yuille</td>
-                            <td><strong>Invited talk 1:  </strong>[<a href="slides/lidworkshopcvpr-1.pdf">slide</a>][<a href="https://youtu.be/8T4Nvx3u2VE">video</a>][<a href="https://www.bilibili.com/video/BV1Ff4y1R7DJ">bilibili</a>] You Only Annotate Once, or Never</td>
-                        </tr>
-                        <tr>
-                            <td>9:10-9:40</td>
-                            <td>CEO at Ariel AI Inc. / Associate Professor UCL</td>
-                            <td>Iasonas Kokkinos</td>
-                            <td><strong>Invited talk 2:  </strong>[<a href="slides/lidworkshopcvpr-2.pdf">slide</a>][<a href="https://youtu.be/bP8jatY_OxY">video</a>][<a href="https://www.bilibili.com/video/BV1Yt4y1Q7GJ">bilibili</a>] Learning 3D object models from 2D images.</td>
-                        </tr>
-                        <tr>
-                            <td>9:50-10:20</td>
-                            <td>Director of Research at Mapillary</td>
-                            <td>Peter Kontschieder </td>
-                            <td><strong>Invited talk 3:  </strong>[<a href="slides/lidworkshopcvpr-3.pdf">slide</a>][<a href="https://youtu.be/KREJY1ABGA8">video</a>][<a href="https://www.bilibili.com/video/BV1MC4y1h7Jw">bilibili</a>] Computer Vision with Less Supervision</td>
-                        </tr>
-                        <tr>
-                            <td>10:30-11:00</td>
-                            <td>Research Scientist at Google</td>
-                            <td>Boqing Gong</td>
-                            <td><strong>Invited talk 4:  </strong>[<a href="slides/lidworkshopcvpr-4.pdf">slide</a>][<a href="https://youtu.be/0Z0DiyS39Sk">video</a>][<a href="https://www.bilibili.com/video/BV1SD4y1S73V">bilibili</a>] Towards Visual Recognition in the Wild: Long-Tailed Sources and Open Compound Targets</td>
-                        </tr>
-                        <tr>
-                            <td>11:10-11:40</td>
-                            <td>Staff Research Scientist at Facebook Research</td>
-                            <td>Zhicheng Yan</td>
-                            <td><strong>Invited talk 5:  </strong>[<a href="slides/lidworkshopcvpr-5.pdf">slide</a>][<a href="https://youtu.be/I8g0LlEER9g">video</a>][<a href="https://www.bilibili.com/video/BV1H5411e73y">bilibili</a>] Decoupling Representation and Classifier for Long-Tailed Recognition</td>
-                        </tr>
-                        <tr>
-                            <td>11:50-12:20</td>
-                            <td>ETH Zurich</td>
-                            <td>Guolei Sun</td>
-                            <td><strong>Oral 1:  </strong>[<a href="slides/Track-1-1-LID-wsss-cvl-eth.pptx">slide</a>][<a href="https://www.youtube.com/watch?v=XfQdw4-3-hg">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.z9ischr02w32">Q&A</a>] The 1st Place of Track-1: Mining Cross-Image Semantics for Weakly
-Supervised Semantic Segmentation</td>
-                        </tr>
-                        <tr>
-                            <td>14:00-14:30</td>
-                            <td>Professor at University of California, Merced</td>
-                            <td>Ming-Hsuan Yang</td>
-                            <td><strong>Invited talk 6:  </strong>[<a href="slides/lidworkshopcvpr-6.pdf">slide</a>][<a href="https://youtu.be/5mn_566NU_4">video</a>][<a href="https://www.bilibili.com/video/BV1yZ4y1u7tB">bilibili</a>] Show, Match and Segment: Joint Weakly Supervised Learning of Semantic Matching and Object Co-segmentation</td>
-                        </tr>
-                        <tr>
-                            <td>14:40-15:10</td>
-                            <td>UCU & SoftServe Team</td>
-                            <td>Mariia Dobko</td>
-                            <td><strong>Oral 2:  </strong>[<a href="slides/Track-1-3-UCU & SoftServe Solution Presentation.pdf">slide</a>][<a href="https://youtu.be/mCrR7rhPMqs">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.p0c0edojmlgg">Q&A</a>] The 3rd Place of Track-1: NoPeopleAllowed: The 3 step approach to weakly supervised semantic
-segmentation</td>
-                        </tr>
-                        <tr>
-                            <td>15:20-15:50</td>
-                            <td>Intel</td>
-                            <td>Hao Zhao</td>
-                            <td><strong>Oral 3:  </strong>[<a href="slides/Track-2-1-Unmix.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=wac4daUcTIo&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=4">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.ls3cxq8tx8ct">Q&A</a>] The 1st Place of Track-2:Pointly supervised Scene Parsing with Uncertainty Mixture</td>
-                        </tr>
-                        <tr>
-                            <td>16:00-16:30</td>
-                            <td>Seoul National University</td>
-                            <td>Wonho Bae</td>
-                            <td><strong>Oral 4:  </strong>[<a href="slides/Track-3-1-lid2020_snuvl.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=j_4Msm76-Y8&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=1">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.b72f14n87sic">Q&A</a>] The 1st Place of Track-3 & The 2nd Place of Track-1: Revisiting Class Activation Mapping for Learning from Imperfect Data</td>
-                        </tr>
-                        <tr>
-                            <td>16:40-17:10</td>
-                            <td>Beijing Jiaotong University & Mepro Team</td>
-                            <td>Chuangchuang Tan</td>
-                            <td><strong>Oral 5:  </strong>[<a href="slides/Track-3-2-LID2020presentation_Tan.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=DqOV-4qUCqQ&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=2">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.iud5tsfagf95">Q&A</a>] The 2nd Place of Track-3: Dual Gradients Localization framework for
-Weakly Supervised Object Localization</td>
-                        </tr>
-                        <tr>
-                            <td>17:20-17:50</td>
-                            <td>Nanjing University Of Science and Technology & LEAP Group@PCA Lab</td>
-                            <td>Zhendong Wang </td>
-                            <td><strong>Oral 6:  </strong>[<a href="slides/Track-3-3.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=sO2c_DyzVHo&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=2">video</a>][<a href="https://www.bilibili.com/video/BV1Ff4y1R7DJ">bilibili</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.mm8x1bvqv3me">Q&A</a>] The 3rd Place of Track-3: Weakly Supervised Object Localization</td>
-                        </tr>
-                        <tr>
-                            <td>17:50-18:20</td>
-                            <td>Professor at University of Adelaide</td>
-                            <td>Chunhua Shen</td>
-                            <td><strong>Invited talk 7:  </strong>[<a href="slides/lidworkshopcvpr-7.pdf">slide</a>] Single shot instance segmentation</td>
-                        </tr>
-                        <tr>
-                            <td>18:20-18:30</td>
-                            <td>Assistant Professor at University of Technology Sydney</td>
-                            <td>Yunchao Wei</td>
-                            <td colspan=3> Closing Remark [<a href="slides/lidworkshopcvpr-closing.pdf">slide</a>][<a href="https://youtu.be/dEP0Se3zzpc">video</a>][<a href="https://www.bilibili.com/video/BV1QK4y1s7ag">bilibili</a>]</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
+                 <p style="text-align: center">Please feel free to contact us if you have any suggestions to improve our workshop! &nbsp&nbsp <strong>fllc3_icme@163.com</strong> </p>
+                 <br><br>
+<!--                <div class="section-title">-->
+<!--                    <h2>Schedule</h2>-->
+<!--                </div>-->
+<!--                <div class="trend-entry d-flex">-->
+<!--                    <div class="trend-contents">-->
+<!--                        <table class="table  table-hover" style="font-size:14px">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th scope="col"> Date    </th>-->
+<!--                            <th scope="col"> June 14 Sunday 2020 <br/>(Pacific Time, SF Time) </th>-->
+<!--                            <th scope="col"> Speaker</th>-->
+<!--                            <th scope="col"> Topic</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>8:30-8:40</td>-->
+<!--                            <td>Research Scientist at Stealth Mode AI Startup</td>-->
+<!--                            <td>Shuai Zheng</td>-->
+<!--                            <td>Opening Remark [<a href="slides/lidworkshopcvpr-opening.pdf">slide</a>][<a href="https://youtu.be/ve8NCkP2GbY">video</a>][<a href="https://www.bilibili.com/video/BV1BV41167kK">bilibili</a>]</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>8:40-9:10</td>-->
+<!--                            <td>Professor at Johns Hopkins University</td>-->
+<!--                            <td>Alan Yuille</td>-->
+<!--                            <td><strong>Invited talk 1:  </strong>[<a href="slides/lidworkshopcvpr-1.pdf">slide</a>][<a href="https://youtu.be/8T4Nvx3u2VE">video</a>][<a href="https://www.bilibili.com/video/BV1Ff4y1R7DJ">bilibili</a>] You Only Annotate Once, or Never</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>9:10-9:40</td>-->
+<!--                            <td>CEO at Ariel AI Inc. / Associate Professor UCL</td>-->
+<!--                            <td>Iasonas Kokkinos</td>-->
+<!--                            <td><strong>Invited talk 2:  </strong>[<a href="slides/lidworkshopcvpr-2.pdf">slide</a>][<a href="https://youtu.be/bP8jatY_OxY">video</a>][<a href="https://www.bilibili.com/video/BV1Yt4y1Q7GJ">bilibili</a>] Learning 3D object models from 2D images.</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>9:50-10:20</td>-->
+<!--                            <td>Director of Research at Mapillary</td>-->
+<!--                            <td>Peter Kontschieder </td>-->
+<!--                            <td><strong>Invited talk 3:  </strong>[<a href="slides/lidworkshopcvpr-3.pdf">slide</a>][<a href="https://youtu.be/KREJY1ABGA8">video</a>][<a href="https://www.bilibili.com/video/BV1MC4y1h7Jw">bilibili</a>] Computer Vision with Less Supervision</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>10:30-11:00</td>-->
+<!--                            <td>Research Scientist at Google</td>-->
+<!--                            <td>Boqing Gong</td>-->
+<!--                            <td><strong>Invited talk 4:  </strong>[<a href="slides/lidworkshopcvpr-4.pdf">slide</a>][<a href="https://youtu.be/0Z0DiyS39Sk">video</a>][<a href="https://www.bilibili.com/video/BV1SD4y1S73V">bilibili</a>] Towards Visual Recognition in the Wild: Long-Tailed Sources and Open Compound Targets</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>11:10-11:40</td>-->
+<!--                            <td>Staff Research Scientist at Facebook Research</td>-->
+<!--                            <td>Zhicheng Yan</td>-->
+<!--                            <td><strong>Invited talk 5:  </strong>[<a href="slides/lidworkshopcvpr-5.pdf">slide</a>][<a href="https://youtu.be/I8g0LlEER9g">video</a>][<a href="https://www.bilibili.com/video/BV1H5411e73y">bilibili</a>] Decoupling Representation and Classifier for Long-Tailed Recognition</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>11:50-12:20</td>-->
+<!--                            <td>ETH Zurich</td>-->
+<!--                            <td>Guolei Sun</td>-->
+<!--                            <td><strong>Oral 1:  </strong>[<a href="slides/Track-1-1-LID-wsss-cvl-eth.pptx">slide</a>][<a href="https://www.youtube.com/watch?v=XfQdw4-3-hg">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.z9ischr02w32">Q&A</a>] The 1st Place of Track-1: Mining Cross-Image Semantics for Weakly-->
+<!--Supervised Semantic Segmentation</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>14:00-14:30</td>-->
+<!--                            <td>Professor at University of California, Merced</td>-->
+<!--                            <td>Ming-Hsuan Yang</td>-->
+<!--                            <td><strong>Invited talk 6:  </strong>[<a href="slides/lidworkshopcvpr-6.pdf">slide</a>][<a href="https://youtu.be/5mn_566NU_4">video</a>][<a href="https://www.bilibili.com/video/BV1yZ4y1u7tB">bilibili</a>] Show, Match and Segment: Joint Weakly Supervised Learning of Semantic Matching and Object Co-segmentation</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>14:40-15:10</td>-->
+<!--                            <td>UCU & SoftServe Team</td>-->
+<!--                            <td>Mariia Dobko</td>-->
+<!--                            <td><strong>Oral 2:  </strong>[<a href="slides/Track-1-3-UCU & SoftServe Solution Presentation.pdf">slide</a>][<a href="https://youtu.be/mCrR7rhPMqs">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.p0c0edojmlgg">Q&A</a>] The 3rd Place of Track-1: NoPeopleAllowed: The 3 step approach to weakly supervised semantic-->
+<!--segmentation</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>15:20-15:50</td>-->
+<!--                            <td>Intel</td>-->
+<!--                            <td>Hao Zhao</td>-->
+<!--                            <td><strong>Oral 3:  </strong>[<a href="slides/Track-2-1-Unmix.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=wac4daUcTIo&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=4">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.ls3cxq8tx8ct">Q&A</a>] The 1st Place of Track-2:Pointly supervised Scene Parsing with Uncertainty Mixture</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>16:00-16:30</td>-->
+<!--                            <td>Seoul National University</td>-->
+<!--                            <td>Wonho Bae</td>-->
+<!--                            <td><strong>Oral 4:  </strong>[<a href="slides/Track-3-1-lid2020_snuvl.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=j_4Msm76-Y8&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=1">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.b72f14n87sic">Q&A</a>] The 1st Place of Track-3 & The 2nd Place of Track-1: Revisiting Class Activation Mapping for Learning from Imperfect Data</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>16:40-17:10</td>-->
+<!--                            <td>Beijing Jiaotong University & Mepro Team</td>-->
+<!--                            <td>Chuangchuang Tan</td>-->
+<!--                            <td><strong>Oral 5:  </strong>[<a href="slides/Track-3-2-LID2020presentation_Tan.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=DqOV-4qUCqQ&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=2">video</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.iud5tsfagf95">Q&A</a>] The 2nd Place of Track-3: Dual Gradients Localization framework for-->
+<!--Weakly Supervised Object Localization</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>17:20-17:50</td>-->
+<!--                            <td>Nanjing University Of Science and Technology & LEAP Group@PCA Lab</td>-->
+<!--                            <td>Zhendong Wang </td>-->
+<!--                            <td><strong>Oral 6:  </strong>[<a href="slides/Track-3-3.pdf">slide</a>][<a href="https://www.youtube.com/watch?v=sO2c_DyzVHo&list=UUX6tsirfrt2W3vnDbKIy2Zw&index=2">video</a>][<a href="https://www.bilibili.com/video/BV1Ff4y1R7DJ">bilibili</a>][<a href="https://docs.google.com/document/d/1Eec63PPUePBPIPaiZjBo2fcdWA7hy26GdVZVf6jc8bQ/edit#heading=h.mm8x1bvqv3me">Q&A</a>] The 3rd Place of Track-3: Weakly Supervised Object Localization</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>17:50-18:20</td>-->
+<!--                            <td>Professor at University of Adelaide</td>-->
+<!--                            <td>Chunhua Shen</td>-->
+<!--                            <td><strong>Invited talk 7:  </strong>[<a href="slides/lidworkshopcvpr-7.pdf">slide</a>] Single shot instance segmentation</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>18:20-18:30</td>-->
+<!--                            <td>Assistant Professor at University of Technology Sydney</td>-->
+<!--                            <td>Yunchao Wei</td>-->
+<!--                            <td colspan=3> Closing Remark [<a href="slides/lidworkshopcvpr-closing.pdf">slide</a>][<a href="https://youtu.be/dEP0Se3zzpc">video</a>][<a href="https://www.bilibili.com/video/BV1QK4y1s7ag">bilibili</a>]</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
-             <div class="col-lg-12" id="results" style="padding-top:80px;margin-top:-80px;">
-                <div class="section-title">
-                    <h2>Challenge results</h2>
-                </div>
-                <div class="trend-entry d-flex">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col" colspan="2">  Track1: Weakly-supervised Semantic Segmentation Challenge</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1st</td>
-                            <td>Guolei Sun, Wenguan Wang, Luc Van Gool. ETH Zurich </td>
-                        </tr>
-                        <tr>
-                            <td>2nd</td>
-                            <td>Wonho Bae*, Junhyug Noh*, Jinhwan Seo, and Gunhee Kim. Seoul National University, Vision & Learning Lab</td>
-                        </tr>
-                        <tr>
-                            <td>3rd</td>
-                            <td>Mariia Dobko, Ostap Viniavskyi, Oles Dobosevych. The Machine Learning Lab at Ukrainian Catholic University, SoftServe</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                 <div class="trend-entry d-flex">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col" colspan="2"> Track2: Weakly-supervised Scene Parsing Challenge</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1st</td>
-                            <td>Hao Zhao, Ming Lu, Anbang Yao, Yiwen Guo, Yurong Chen, Li Zhang. Tsinghua University</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                 </div>
-                 <div class="trend-entry d-flex">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col" colspan="2">  Track3: Weakly-supervised Object Localization Challenge</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1st</td>
-                            <td>Wonho Bae*, Junhyug Noh*, Jinhwan Seo, and Gunhee Kim. Seoul National University, Vision & Learning Lab</td>
-                        </tr>
-                        <tr>
-                            <td>2nd</td>
-                            <td>Chuangchuang Tan <sup>1*</sup>, Tao Ruan <sup>1*</sup>, Guanghua Gu <sup>2</sup>, Shikui Wei <sup>1</sup>, Yao Zhao<sup>1</sup>.   <sup>1</sup>Beijing Jiaotong University, <sup>2</sup>Yanshan University</td>
-                        </tr>
-                        <tr>
-                            <td>3rd</td>
-                            <td>Zhendong Wang, Zhenyuan Chen, Chen Gong. Nanjing University Of Science and Technology, LEAP Group@PCA Lab</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+<!--             <div class="col-lg-12" id="results" style="padding-top:80px;margin-top:-80px;">-->
+<!--                <div class="section-title">-->
+<!--                    <h2>Challenge results</h2>-->
+<!--                </div>-->
+<!--                <div class="trend-entry d-flex">-->
+<!--                    <table class="table">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th scope="col" colspan="2">  Track1: Weakly-supervised Semantic Segmentation Challenge</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>1st</td>-->
+<!--                            <td>Guolei Sun, Wenguan Wang, Luc Van Gool. ETH Zurich </td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>2nd</td>-->
+<!--                            <td>Wonho Bae*, Junhyug Noh*, Jinhwan Seo, and Gunhee Kim. Seoul National University, Vision & Learning Lab</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>3rd</td>-->
+<!--                            <td>Mariia Dobko, Ostap Viniavskyi, Oles Dobosevych. The Machine Learning Lab at Ukrainian Catholic University, SoftServe</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--                 <div class="trend-entry d-flex">-->
+<!--                    <table class="table">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th scope="col" colspan="2"> Track2: Weakly-supervised Scene Parsing Challenge</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>1st</td>-->
+<!--                            <td>Hao Zhao, Ming Lu, Anbang Yao, Yiwen Guo, Yurong Chen, Li Zhang. Tsinghua University</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                 </div>-->
+<!--                 <div class="trend-entry d-flex">-->
+<!--                    <table class="table">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th scope="col" colspan="2">  Track3: Weakly-supervised Object Localization Challenge</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody>-->
+<!--                        <tr>-->
+<!--                            <td>1st</td>-->
+<!--                            <td>Wonho Bae*, Junhyug Noh*, Jinhwan Seo, and Gunhee Kim. Seoul National University, Vision & Learning Lab</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>2nd</td>-->
+<!--                            <td>Chuangchuang Tan <sup>1*</sup>, Tao Ruan <sup>1*</sup>, Guanghua Gu <sup>2</sup>, Shikui Wei <sup>1</sup>, Yao Zhao<sup>1</sup>.   <sup>1</sup>Beijing Jiaotong University, <sup>2</sup>Yanshan University</td>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <td>3rd</td>-->
+<!--                            <td>Zhendong Wang, Zhenyuan Chen, Chen Gong. Nanjing University Of Science and Technology, LEAP Group@PCA Lab</td>-->
+<!--                        </tr>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                </div>-->
 
-            </div>
+<!--            </div>-->
 
-            <div class="col-lg-10" id="papers" style="padding-top:80px;margin-top:-80px;">
-                <div class="section-title">
-                    <h2>Papers</h2>
-                </div>
-                <div class="trend-entry d-flex">
-                    <table>
-                        <tr>
-                            <td><strong> 1st (Track1) </strong> </td>
-                             <td>
-                                 <div>
-                                     <p>
-                                         Mining Cross-Image Semantics for Weakly Supervised Semantic Segmentation <strong class="text-danger"> (Best Paper Award)</strong> <br/>
-                                          Guolei Sun , Wenguan Wang , Luc Van Gool <br/>
-                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>
-                                         [<a href="papers/Track-1-1-(cvpr2020)LID-wsss-cvl-eth.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib1" aria-expanded="false" aria-controls="bib1">BibTex</a>]
-                                         <div class="collapse" id="bib1">
-                                              <div class="panel panel-default panel-body">
-                                               @article{sun2020lid, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Sun, Guolei and Wang, Wenguan and Van Gool, Luc},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Mining Cross-Image Semantics for Weakly Supervised Semantic Segmentation},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>
-                                                    }
-                                              </div>
-                                         </div>
-                                     </p>
-                                 </div>
-                             </td>
-                        </tr>
-                         <tr>
-                             <td><strong>3rd (Track1)</strong> </td>
-                             <td>
-                                 <div>
-                                     <p>
-                                          NoPeopleAllowed: The Three-Step Approach to Weakly Supervised Semantic Segmentation <br/>
-                                          Mariia Dobko, Ostap Viniavskyi, Oles Dobosevych <br/>
-                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>
-                                         [<a href="papers/Track-1-3-NoPeopleAllowed- The Three-Step Approach to Weakly Supervised SemanticSegmentation.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib2" aria-expanded="false" aria-controls="bib2">BibTex</a>]
-                                         <div class="collapse" id="bib2">
-                                              <div class="panel panel-default panel-body">
-                                               @article{dobko2020lid, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Dobko, Mariia  and Viniavskyi, Ostap and Dobosevych, Oles}, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {NoPeopleAllowed: The Three-Step Approach to Weakly Supervised Semantic Segmentation},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>
-                                                    }
-                                              </div>
-                                         </div>
-                                     </p>
-                                 </div>
-                             </td>
-                        </tr>
-                         <tr>
-                             <td> <strong> 1st (Track2) </strong></td>
-                             <td>
-                                 <div>
-                                     <p>
-                                          Pointly-supervised Scene Parsing with Uncertainty Mixture <br/>
-                                          Hao Zhao, Ming Lu, Anbang Yao, Yiwen Guo, Yurong Chen, Li Zhang <br/>
-                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>
-                                         [<a href="papers/Track-2-1-unmix-lid.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib3" aria-expanded="false" aria-controls="bib3">BibTex</a>]
-                                         <div class="collapse" id="bib3">
-                                              <div class="panel panel-default panel-body">
-                                               @article{zhao2020lid, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Zhao, Hao and Lu, Ming and Yao, Anbang and Guo, Yiwen and Chen, Yurong, Zhang, Li}, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Pointly-supervised Scene Parsing with Uncertainty Mixture},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>
-                                                    }
-                                              </div>
-                                         </div>
-                                     </p>
-                                 </div>
-                             </td>
-                        </tr>
-                         <tr>
-                             <td> <strong>1st (Track3)</strong></td>
-                             <td>
-                                  <div>
-                                     <p>
-                                          Revisiting Class Activation Mapping for Learning from Imperfect Data <br/>
-                                          Wonho Bae*, Junhyug Noh*, Jinhwan Seo, Gunhee Kim <br/>
-                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>
-                                         [<a href="papers/Track-3-1-lid_paper_snuvl.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib4" aria-expanded="false" aria-controls="bib4">BibTex</a>]
-                                         <div class="collapse" id="bib4">
-                                              <div class="panel panel-default panel-body">
-                                               @article{bae2020lid, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Bae, Wonho and Noh, Junhyug and Seo, Jinhwan  and Kim, Gunhee}, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Revisiting Class Activation Mapping for Learning from Imperfect Data},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>
-                                                    }
-                                              </div>
-                                         </div>
-                                     </p>
-                                 </div>
-                             </td>
-                        </tr>
-                         <tr>
-                             <td><strong>5th (Track3)</strong></td>
-                             <td>
-                                 <div>
-                                     <p>
-                                          Object Localization with weakly supervised learning <br/>
-                                          Jun He, Huanqing Yan <br/>
-                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>
-                                         [<a href="papers/Object Localization with weakly supervised learning.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib5" aria-expanded="false" aria-controls="bib5">BibTex</a>]
-                                         <div class="collapse" id="bib5">
-                                              <div class="panel panel-default panel-body">
-                                               @article{he2020lid, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {He, Jun and Yan, Huanqing}, <br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Object Localization with weakly supervised learning},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>
-                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>
-                                                    }
-                                              </div>
-                                         </div>
-                                     </p>
-                                 </div>
-                             </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+<!--            <div class="col-lg-10" id="papers" style="padding-top:80px;margin-top:-80px;">-->
+<!--                <div class="section-title">-->
+<!--                    <h2>Papers</h2>-->
+<!--                </div>-->
+<!--                <div class="trend-entry d-flex">-->
+<!--                    <table>-->
+<!--                        <tr>-->
+<!--                            <td><strong> 1st (Track1) </strong> </td>-->
+<!--                             <td>-->
+<!--                                 <div>-->
+<!--                                     <p>-->
+<!--                                         Mining Cross-Image Semantics for Weakly Supervised Semantic Segmentation <strong class="text-danger"> (Best Paper Award)</strong> <br/>-->
+<!--                                          Guolei Sun , Wenguan Wang , Luc Van Gool <br/>-->
+<!--                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>-->
+<!--                                         [<a href="papers/Track-1-1-(cvpr2020)LID-wsss-cvl-eth.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib1" aria-expanded="false" aria-controls="bib1">BibTex</a>]-->
+<!--                                         <div class="collapse" id="bib1">-->
+<!--                                              <div class="panel panel-default panel-body">-->
+<!--                                               @article{sun2020lid, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Sun, Guolei and Wang, Wenguan and Van Gool, Luc},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Mining Cross-Image Semantics for Weakly Supervised Semantic Segmentation},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>-->
+<!--                                                    }-->
+<!--                                              </div>-->
+<!--                                         </div>-->
+<!--                                     </p>-->
+<!--                                 </div>-->
+<!--                             </td>-->
+<!--                        </tr>-->
+<!--                         <tr>-->
+<!--                             <td><strong>3rd (Track1)</strong> </td>-->
+<!--                             <td>-->
+<!--                                 <div>-->
+<!--                                     <p>-->
+<!--                                          NoPeopleAllowed: The Three-Step Approach to Weakly Supervised Semantic Segmentation <br/>-->
+<!--                                          Mariia Dobko, Ostap Viniavskyi, Oles Dobosevych <br/>-->
+<!--                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>-->
+<!--                                         [<a href="papers/Track-1-3-NoPeopleAllowed- The Three-Step Approach to Weakly Supervised SemanticSegmentation.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib2" aria-expanded="false" aria-controls="bib2">BibTex</a>]-->
+<!--                                         <div class="collapse" id="bib2">-->
+<!--                                              <div class="panel panel-default panel-body">-->
+<!--                                               @article{dobko2020lid, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Dobko, Mariia  and Viniavskyi, Ostap and Dobosevych, Oles}, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {NoPeopleAllowed: The Three-Step Approach to Weakly Supervised Semantic Segmentation},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>-->
+<!--                                                    }-->
+<!--                                              </div>-->
+<!--                                         </div>-->
+<!--                                     </p>-->
+<!--                                 </div>-->
+<!--                             </td>-->
+<!--                        </tr>-->
+<!--                         <tr>-->
+<!--                             <td> <strong> 1st (Track2) </strong></td>-->
+<!--                             <td>-->
+<!--                                 <div>-->
+<!--                                     <p>-->
+<!--                                          Pointly-supervised Scene Parsing with Uncertainty Mixture <br/>-->
+<!--                                          Hao Zhao, Ming Lu, Anbang Yao, Yiwen Guo, Yurong Chen, Li Zhang <br/>-->
+<!--                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>-->
+<!--                                         [<a href="papers/Track-2-1-unmix-lid.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib3" aria-expanded="false" aria-controls="bib3">BibTex</a>]-->
+<!--                                         <div class="collapse" id="bib3">-->
+<!--                                              <div class="panel panel-default panel-body">-->
+<!--                                               @article{zhao2020lid, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Zhao, Hao and Lu, Ming and Yao, Anbang and Guo, Yiwen and Chen, Yurong, Zhang, Li}, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Pointly-supervised Scene Parsing with Uncertainty Mixture},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>-->
+<!--                                                    }-->
+<!--                                              </div>-->
+<!--                                         </div>-->
+<!--                                     </p>-->
+<!--                                 </div>-->
+<!--                             </td>-->
+<!--                        </tr>-->
+<!--                         <tr>-->
+<!--                             <td> <strong>1st (Track3)</strong></td>-->
+<!--                             <td>-->
+<!--                                  <div>-->
+<!--                                     <p>-->
+<!--                                          Revisiting Class Activation Mapping for Learning from Imperfect Data <br/>-->
+<!--                                          Wonho Bae*, Junhyug Noh*, Jinhwan Seo, Gunhee Kim <br/>-->
+<!--                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>-->
+<!--                                         [<a href="papers/Track-3-1-lid_paper_snuvl.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib4" aria-expanded="false" aria-controls="bib4">BibTex</a>]-->
+<!--                                         <div class="collapse" id="bib4">-->
+<!--                                              <div class="panel panel-default panel-body">-->
+<!--                                               @article{bae2020lid, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {Bae, Wonho and Noh, Junhyug and Seo, Jinhwan  and Kim, Gunhee}, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Revisiting Class Activation Mapping for Learning from Imperfect Data},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>-->
+<!--                                                    }-->
+<!--                                              </div>-->
+<!--                                         </div>-->
+<!--                                     </p>-->
+<!--                                 </div>-->
+<!--                             </td>-->
+<!--                        </tr>-->
+<!--                         <tr>-->
+<!--                             <td><strong>5th (Track3)</strong></td>-->
+<!--                             <td>-->
+<!--                                 <div>-->
+<!--                                     <p>-->
+<!--                                          Object Localization with weakly supervised learning <br/>-->
+<!--                                          Jun He, Huanqing Yan <br/>-->
+<!--                                          The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops, 2020<br/>-->
+<!--                                         [<a href="papers/Object Localization with weakly supervised learning.pdf">PDF</a>] [<a data-toggle="collapse"  href="#bib5" aria-expanded="false" aria-controls="bib5">BibTex</a>]-->
+<!--                                         <div class="collapse" id="bib5">-->
+<!--                                              <div class="panel panel-default panel-body">-->
+<!--                                               @article{he2020lid, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; author = {He, Jun and Yan, Huanqing}, <br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; title = {Object Localization with weakly supervised learning},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; journal = {The 2020 Learning from Imperfect Data (LID) Challenge - CVPR Workshops},<br/>-->
+<!--                                                      &nbsp;&nbsp;&nbsp;&nbsp; year = {2020}<br/>-->
+<!--                                                    }-->
+<!--                                              </div>-->
+<!--                                         </div>-->
+<!--                                     </p>-->
+<!--                                 </div>-->
+<!--                             </td>-->
+<!--                        </tr>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--            </div>-->
 
+
+<!------------------------  overview  ----------------------->
             <div class="col-lg-12">
                 <div class="section-title">
-                    <h2>Introduction</h2>
+                    <h2>Overview</h2>
                 </div>
                 <div class="trend-entry d-flex">
                     <div class="trend-contents">
                         <p>
-                            Weakly supervised learning refers to a variety of studies that attempt to address the
-                            challenging pattern recognition tasks by learning from weak or imperfect supervision.
-                            Supervised learning methods including Deep Convolutional Neural Networks (DCNNs) have
-                            significantly improved the performance in many problems in the field of computer vision,
-                            thanks to the rise of large-scale annotated data set and the advance in computing hardware.
-                            However, these supervised learning approaches are notorious "data hungry", which makes them
-                            are sometimes not practical in many real-world industrial applications. We are often facing
-                            the problem that we are not able to acquire enough amount of perfect annotations (e.g.,
-                            object bounding boxes and pixel-wise masks) for reliable training models. To address this
-                            problem, many efforts in so-called weakly supervised learning approaches have been made to
-                            improve the DCNNs training to deviate from traditional paths of supervised learning using
-                            imperfect data. For instance, various approaches have proposed new loss functions or novel
-                            training schemes. Weakly supervised learning is a popular research direction in Computer
-                            Vision and Machine Learning communities, many research works have been devoted to related
-                            topics, leading to rapid growth of related publications in the top-tier conferences and
-                            journals such as CVPR, ICCV, ECCV, T-IP, and T-PAMI. We organize this workshop to
-                            investigate current ways of building industry level AI system relying on learning from
-                            imperfect data. We hope this workshop will attract attention and discussions from both
-                            industry and academic people.
+
+                            &emsp;&emsp;&emsp; Due to the global pandemic of COVID-19, people are recommended to wear facial mask for the sake of health and safety and the situation will continue in the long run. This apparently makes conventional facial landmark localization unfaithful (inaccurate) and inefficient. However, facial landmark localization is a very crucial step of facial recognition technology, which is very helpful in tracking the close contacts of COVID-19 patients to prevent the spread of the virus. Besides, it is also wildly used in facial pose estimation, face image synthesis, and etc. Therefore, we are hosting the 3rd grand challenge of 106-point facial landmark localization in conjunction with ICME 2021, aiming to improve the accuracy and efficiency of facial landmark localization in the real-world situation, especially on the masked faces.
+                            <br>
+                            &emsp;&emsp;&emsp; The 1st and 2nd 106-point facial landmark localization competitions were held in conjunctive with ICME2019 and ICPR2020, respectively. There are more than 400 teams taking part in the competitions, e.g., Tinghua University, National University of Singapore, University of Michigan. Different from the prior two challenges [1][2], the 2021 edition contains more than 50,000 images of three kinds, real-masked, virtual-masked, and non-masked, which are largely varied in identity, pose, expression, and occlusion. In addition, a strict limitation of model weights is required for computational efficiency (the upper bound of computational complexity is 100MFLOPs, and the upper bound of model size is 2MB). We sincerely invite academic and industrial practitioners to participate in and together push the frontier along this direction.
+
                         </p>
                     </div>
                 </div>
             </div>
 
+
+
+
+
+<!------------------------  import dates  --------------------->
             <div class="col-lg-12" id="dates" style="padding-top:80px;margin-top:-80px;">
                 <div class="section-title">
                     <h2>Important Dates</h2>
@@ -519,11 +523,32 @@ Weakly Supervised Object Localization</td>
                         <tbody> 
                         <tr>
                             <td>Challenge Begin</td>
-                            <td>11:59PM Pacific Time Mar 22, 2020</td>
-                        </tr> 
+                            <td>11:59PM Pacific Time March 1, 2021</td>
+                        </tr>
+
                         <tr>
-                            <td>Challenge Deadline</td>
-                            <td>11:59PM Pacific Time June 8, 2020</td>
+                            <td>Validation phase</td>
+                            <td>11:59PM Pacific Time March 1, 2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Release test images</td>
+                            <td>11:59PM Pacific Time April 1, 2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Model & Paper submission deadline</td>
+                            <td>11:59PM Pacific Time April 7, 2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Final evaluation results & Paper acceptance announcement</td>
+                            <td>11:59PM Pacific Time April 30, 2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Camera-ready paper submission deadline</td>
+                            <td>11:59PM Pacific Time May 7, 2021</td>
                         </tr>
                       <!--   <tr>
                             <td>Poster</td>
@@ -535,117 +560,321 @@ Weakly Supervised Object Localization</td>
 
             </div>
 
-            <div class="col-lg-12" id="people" style="padding-top:80px;margin-top:-80px;">
+
+
+
+
+
+<!----------------------------  dataset  ---------------------------------------->
+<br>
+
+            <!-- Challenge 1-->
+            <div class="col-lg-12" id="datasets" style="padding-top:80px;margin-top:-80px;">
+
                 <div class="section-title">
-                    <h2>People</h2>
+                    <h2>Dataset Description</h2>
+                    <br><br>
+
+                    <p>The landmark definition for the training/validation/test datasets is shown in Fig.1.</p>
+
+                    <img src="images/106point.png" align="middle">
+                    <p>Figure1: The 106-key-point mark-up used for our annotations</p>
                 </div>
-                <div class="row justify-content-md-center">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/wyc2.jpg" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a href="https://weiyc.github.io/">Yunchao Wei</a> </span>
-                                <span class="date-read"> wychao1987 AT gmail.com</span>
-                            </div>
-                        </div>
+
+
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+
+                        <!----------------    training set   ------------>
+                        <h4>Training dataset:</h4>
+                        <br>
+                        <p>
+                            We collect an incremental dataset named JD-landmark-mask.
+                            Besides the face images in JD-landmark [3] dataset, we
+                            provide the virtual-masked face images by utilizing our
+                            virtual mask addition algorithm. This dataset, containing
+                            about 40,000 faces, is applied as the training dataset.
+                            It is accessible to the participants (with landmark annotations).
+                            Fig.2 shows some examples in which the first row refers to the
+                            real face image and the second row refers to the virtual masked image.
+                        </p>
+                    <div class="section-title">
+                        <img src="images/masked_ex.png" align="middle">
+                        <p>Figure2: Examples of training dataset.
+                            The first row: non-masked face image.
+                            The second row: virtual-masked image</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/shuai_zheng.jpg" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a href="https://kylezheng.org/">Shuai (Kyle) Zheng</a> </span>
-                                <span class="date-read">szhengcvpr AT gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/CMMC.jpg" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a href="https://mmcheng.net/cmm/">Ming-Ming Cheng</a> </span>
-                                <span class="date-read">cmm AT nankai.edu.cn</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/hangzhao.jpg" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a href="http://www.mit.edu/~hangzhao/">Hang Zhao</a> </span>
-                                <span class="date-read">zhaohang0124 AT gmail.com</span>
-                            </div>
-                        </div>
+
+                        <ul>
+<!--                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>-->
+                            <li><strong>Download: </strong> The training dataset is available at <a
+                                    href="">Here</a>, val and test dataset are available at <a
+                                        href="">Baidu Drive </a> and <a
+                                        href="">Google Drive</a> <br/>
+<!--                                <strong class="text-danger">Note: </strong> The image label information can be extracted using the <a href="https://drive.google.com/open?id=1ajioybXZYPIXUyQl7G4MRykr7AvelAL6">scripts</a> </li>-->
+<!--                            <li><strong>Submission: </strong> <a-->
+<!--                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview</a>-->
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 
-                <div class="row justify-content-md-center" style="margin-top: 40px">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/Liwei.jpg" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a href="#">Liwei Wang</a> </span>
-                                <span class="date-read"> </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/dingerrui.png" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a
-                                        href="https://scholar.google.com/citations?user=1wzEtxcAAAAJ&hl=zh-CN">Errui Ding</a> </span>
-                                <span class="date-read">dingerrui AT baidu.com </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/yangyi.jpg" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a href="https://www.uts.edu.au/staff/yi.yang">Yi Yang</a> </span>
-                                <span class="date-read"> yi.yang AT uts.edu.au </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="images/antonioTorralbaS.jpg" width="100%"/>
-                            <div class="post-meta">
-                                <span class="d-block"><a
-                                        href="http://web.mit.edu/torralba/www/">Antonio Torralba</a> </span>
-                                <span class="date-read">torralba AT mit.edu</span>
-                            </div>
-                        </div>
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+
+                        <!----------------    training set   ------------>
+                        <h4>Validation dataset:</h4>
+                        <br>
+                        <p>
+                            It consists of 2000 in-the-wild non-masked images,
+                            and 2000 virtual-masked images which are generated
+                            by the same method as the training dataset. The participants’
+                            models will be evaluated on this set before the final evaluation.
+                        </p>
+
+                        <ul>
+<!--                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>-->
+                            <li><strong>Download: </strong> The training dataset is available at <a
+                                    href="">Here</a>, val and test dataset are available at <a
+                                        href="">Baidu Drive </a> and <a
+                                        href="">Google Drive</a> <br/>
+<!--                                <strong class="text-danger">Note: </strong> The image label information can be extracted using the <a href="https://drive.google.com/open?id=1ajioybXZYPIXUyQl7G4MRykr7AvelAL6">scripts</a> </li>-->
+<!--                            <li><strong>Submission: </strong> <a-->
+<!--                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview</a>-->
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
-                <div class="row" style="margin-top: 40px">
-                    <div class="col-md-3">
-                        <div class="card">
-<!--                             <img src="LID2019/img/liuting.jpg" width="100%"/> -->
-                            <div class="post-meta">
-                                <span class="d-block"> Ting Liu </span>
-                                <span >Webmaster</span>
-                            </div>
-                        </div>
+
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+
+                        <!----------------    training set   ------------>
+                        <h4>Test dataset:</h4>
+                        <br>
+                        <p>
+                            It contains 2000 in-the-wild non-masked images and
+                            2000 real-masked images which are collected from the internet.
+                            Please be notified that there are no virtual-masked images in
+                            the final evaluation and the test dataset is blind to participants
+                            throughout the whole competition. It will be used for the final evaluation.
+                        </p>
+
+                        <ul>
+<!--                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>-->
+                            <li><strong>Download: </strong> The training dataset is available at <a
+                                    href="">Here</a>, val and test dataset are available at <a
+                                        href="">Baidu Drive </a> and <a
+                                        href="">Google Drive</a> <br/>
+                                <strong class="text-danger">Note: </strong>&ensp;there are <strong>no</strong> virtual-masked images in
+                                    the final evaluation and
+                                <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                                the test dataset is <strong>blind</strong> to participants
+                                    throughout the whole competition. </li>
+<!--                            <li><strong>Submission: </strong> <a-->
+<!--                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview</a>-->
+                            </li>
+                        </ul>
+
                     </div>
+                </div>
+            </div>
+
+
+
+<!------------------------  Evaluation criteria  ----------------------->
+            <br><br><br>
+        <div class="col-lg-12" id="criteria" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <h2>Evaluation criteria</h2>
+            </div>
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                    <p>
+
+                        &emsp;&emsp;&emsp; Submissions will be evaluated on the area-under-the-curve (AUC) from the cumulative errors distribution (CED) curves. Because there are two types of images in test dataset, we will score on the arithmetic mean of the AUC. Besides, further statistics from the CED curves such as the failure rate and average normalized mean error (NME) will also be returned to the participants for inclusion in their papers.
+                        <br>
+                        &emsp;&emsp;&emsp; The cumulative curve corresponding to the percentage of test images of which the error is less than a threshold ⍺ will be produced. The area-under-the-curve (AUC) is the area under the cumulative distribution curve calculated up to the threshold ⍺, then divided by that threshold. We set the value of ⍺ to be 0.08. Similarly, we consider each image with a point-to-point normalized mean error of α or greater as failure. NME is computed as:
+                    </p>
+
+<!--                    <div class="title_centre">-->
+                    <img src="images/formula.png">
+<!--                    </div>-->
+
+                    <p>
+                        &emsp;&emsp;&emsp; where “x” denotes the ground truth landmarks for a given face, “y” denotes the corresponding prediction and “d” is computed as d=√(〖width〗_bbox* 〖height〗_bbox ). Here, 〖width〗_bbox and 〖height〗_bbox are the width and height of the enclosing rectangle of the ground truth landmarks. Note that only the successfully detected images will be evaluated for the NME.
+                    </p>
+
                 </div>
             </div>
         </div>
 
+
+<!------------------------  Submission Guidelines  ----------------------->
+        <br><br><br>
+        <div class="col-lg-12" id="Submission" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <h2>Submission Guidelines</h2>
+            </div>
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                    <p>
+
+                        &emsp;&emsp; 1. During validation phase, participants can submit their predicted results to our on-line evaluation server and get the performance on the validation set. Each team can only submit once per day.
+                        <br>
+
+                        &emsp;&emsp; 2. During April 1, 2021-April 7, 2021, participants should send their model and paper to fllc3_icme@163.com for the final evaluation.
+                        <br>
+
+                        &emsp;&emsp; 3. The authors acknowledge that if they decide to submit, the resulting curve might be used by the organizers in any related visualizations/results. The authors are prohibited from sharing the results with other contesting teams.
+
+                </div>
+            </div>
+        </div>
+
+
+
+<!------------------------  Submission Guidelines  ----------------------->
+        <br><br><br>
+        <div class="col-lg-12" id="information" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <h2>Additional Information</h2>
+            </div>
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                    <p>
+
+                        &emsp;&emsp; 1. The dataset is available for non-commercial research purposes only.
+                        <br>
+                        &emsp;&emsp; 2. You agree not to reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.
+                        <br>
+                        &emsp;&emsp; 3. You agree not to further copy, publish or distribute any portion of annotations of the dataset. Except, for internal use at a single site within the same organization it is allowed to make copies of the dataset.
+                        <br>
+                        &emsp;&emsp; 4. We reserve the right to terminate your access to the dataset at any time.
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+<!----------------------------  organizer  ---------------------------------------->
+
+            <div class="col-lg-12" id="organizer" style="padding-top:80px;margin-top:-80px;">
+                <div class="section-title">
+                    <h2>organizers</h2>
+                </div>
+                <div class="row justify-content-md-center">
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/wyc2.jpg" width="100%"/>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="https://github.com/lucia123">Yinglu Liu</a> </span>
+                                <span class="date-read">  AT jd.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/shuai_zheng.jpg" width="100%"/>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="https://mitchellx.github.io/">Mingcan Xiang</a> </span>
+                                <span class="date-read">  AT jd.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/CMMC.jpg" width="100%"/>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="https://sites.google.com/view/hailin-shi">Hailin Shi</a> </span>
+                                <span class="date-read">  AT jd.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/hangzhao.jpg" width="100%"/>
+                            <div class="post-meta">
+                                <span class="d-block"><a href="http://liuwu.weebly.com/">Wu Liu</a> </span>
+                                <span class="date-read">  AT jd.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+<!--                <div class="row" style="margin-top: 40px">-->
+<!--                    <div class="col-md-3">-->
+<!--                        <div class="card">-->
+<!--&lt;!&ndash;                             <img src="LID2019/img/liuting.jpg" width="100%"/> &ndash;&gt;-->
+<!--                            <div class="post-meta">-->
+<!--                                <span class="d-block"> Ting Liu </span>-->
+<!--                                <span >Webmaster</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+
+
+
+<!------------------------------ sponsor  ------------------------------------------>
         <div class="col-lg-12" id="sponsor">
             <div class="section-title" style="padding-top: 50px">
                 <h2>Sponsor</h2>
             </div>
             <div class="trend-entry d-flex">
                 <div class="row justify-content-md-center">
-                    <div class="col-md-3">
-                        <img src="images/Baidu-Logo.png" width="100%"/>
+                    <div class="section-title">
+                        <img src="images/jd-logo.png" class="icon-align-center" width="30%">
                     </div>
+
                 </div>
             </div>
         </div>
 
 
+
+
+<!------------------------  reference  ----------------------->
+        <br><br><br>
+        <div class="col-lg-12" id="reference" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <h2>reference</h2>
+            </div>
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                    <p>
+
+                        &emsp;  [1]  https://facial-landmarks-localization-challenge.github.io/
+                        <br>
+                        &emsp; [2]  https://fllc-icpr2020.github.io/home/
+                        <br>
+                        &emsp; [3]  Yinglu Liu, Hao Shen, Yue Si, Xiaobo Wang, Xiangyu Zhu, Hailin Shi, et al. "Grand Challenge of 106-Point Facial Landmark Localization." In 2019 IEEE International Conference on Multimedia and Expo (ICME) Workshop. IEEE, 2019.
+
+<!--                        &emsp;&emsp; 4. We reserve the right to terminate your access to the dataset at any time.-->
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-------------------------------   boarder  ---------------------------------------->
         <div class="col-lg-12">
             <div style="display:inline-block;width:500px;">
                 <script type="text/javascript" src="//rc.rev
