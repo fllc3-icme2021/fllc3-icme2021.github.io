@@ -285,13 +285,13 @@
 			}
 		}
 	}
-	
+
 	[class^="col-"]:last-child {
 		.service-1 {
 			border-right: 1px solid #efefef;
 		}
 	}
-	
+
 }
 
   .header-top {
@@ -397,7 +397,7 @@
 		right: 20px;
 		transition: .3s all ease;
 		transform: translateY(100%);
-		
+
 		opacity: 0;
 		visibility: hidden;
 		.project-item-category {
@@ -466,7 +466,7 @@
 		&:-moz-placeholder { /* Firefox 18- */
 			color: $white;
 		}
-	}	
+	}
 	.btn-primary {
 		&:hover {
 			background: $black;
