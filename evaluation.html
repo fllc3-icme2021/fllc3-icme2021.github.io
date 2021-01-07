@@ -90,6 +90,11 @@
                                 <a href="evaluation.html" class="nav-link text-left">evaluation</a>
                             </li>
 
+                            <li>
+                                <a href="leaderboard.html" class="nav-link text-left">leaderboard</a>
+                            </li>
+
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="challenge.html" id="navbarDropdown"
                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -153,11 +158,13 @@
                     </p>
 
 <!--                    <div class="title_centre">-->
-                    <img src="images/formula.png" width="30%" class="text-center">
+                    <img src="images/formula.png" width="40%" class="text-center">
 <!--                    </div>-->
 
                     <p>
-                        where “x” denotes the ground truth landmarks for a given face, “y” denotes the corresponding prediction and “d” is computed as d=√(〖width〗_bbox* 〖height〗_bbox ). Here, 〖width〗_bbox and 〖height〗_bbox are the width and height of the enclosing rectangle of the ground truth landmarks. Note that only the successfully detected images will be evaluated for the NME.
+                        where "x" denotes the ground truth landmarks for a given face, "y" denotes the corresponding prediction and "d" is computed as <img src="images/formula1.png" width="25%">. Here,  <strong><cite>width<sub>bbox</sub></cite></strong>  and  <strong><cite>height<sub>bbox</sub></cite></strong>  are the width and height of the enclosing rectangle of the ground truth landmarks.
+                        <br><br>
+                        <strong class="text-danger">Note that </strong>&ensp; only the successfully detected images will be evaluated for the NME.
                     </p>
 
                 </div>
@@ -190,7 +197,7 @@
                             <p>The authors acknowledge that if they decide to submit, the resulting curve might be used by the organizers in any related visualizations/results. The authors are prohibited from sharing the results with other contesting teams.
                             </p>
                         </li>
-                    </ul>>
+                    </ul>
                 </div>
             </div>
         </div>
