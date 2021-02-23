@@ -155,25 +155,26 @@
                     <div class="trend-contents">
 
                             &emsp;&emsp;&emsp;
-                        <p>Due to the invisibility of faces under the mask and racial diversity, there are inevitable differences when people predict the facial landmarks in these areas. For fairness, we only take some stable points into account.</p>
+                        <p>Due to the invisibility of nose and mouth under the mask, there are inevitable diversity when people predict the facial landmarks in these areas.
+                            For fairness, we decide to delete some points which are variable along with change in expression.</p>
 
                         <ul>
 
                         <li>
                             <p>
-                                In the nose area, points 53, 54, 55, and 61, matter. Even though people's noses are inborn different from each other, the bridge of the nose is fixed. We can leverage the fixed points to measure the length of the nose.
+                                In the nose area, we delete points 57-60, 62-65. Even though people's noses are inborn different from each other, the bridge of the nose is fixed. We can leverage the fixed points to measure the length of the nose.
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                In the mouth area, points 88, 94, and 103 matter. Mask covers almost the whole mouth, so it is pretty hard to predict what expression it is, so does the width and height of the mouse. However, we can easily predict the midpoint, due to symmetry.
+                                In the mouth area, we delete points 85-87, 89-93, 94-98, 100-102. Mask covers almost the whole mouth, so it is pretty hard to predict what expression it is, so does the width and height of the mouse. However, we can easily predict the midpoint, due to symmetry.
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                For the eye and eyebrow area, it is visible. So, we take all the points into account.
+                                In the eye and eyebrow area, it is visible. So, we take all the points into account.
                             </p>
                         </li>
                         <li>
@@ -183,14 +184,14 @@
 
 
 
-                            <strong class="text-danger">Important! </strong>&ensp; Although we only take x points into account, you still need to training you model on 106 points and send us the full results. See an example <a href="">Here</a>.
+                            <strong class="text-danger">Important! </strong>&ensp; Although we only take x points into account, you still need to training you model on 106 points and send us the full results. See an example <a href="https://github.com/fllc3-icme2021/fllc3-icme2021.github.io/blob/main/example.txt">Here</a>.
                                                                 <br>
                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Please strictly follow the format.
                     </div>
                 </div>
 
 
-                    <img src="images/106point.png" align="middle" width="50%">
+                    <img src="images/106point.jpg" align="middle" width="50%">
                     <p>Figure1: The key-points used for our annotations</p>
 
             </div>
@@ -222,7 +223,7 @@
                 <div class="trend-contents">
 
                     <p>
-                        where "x" denotes the ground truth landmarks for a given face, "y" denotes the corresponding prediction and "d" is computed as <img src="images/formula1.png">. Here,  <strong><cite>width<sub>bbox</sub></cite></strong>  and  <strong><cite>height<sub>bbox</sub></cite></strong>  are the width and height of the enclosing rectangle of the ground truth landmarks.
+                        where "x" denotes the ground truth landmarks for a given face, "y" denotes the corresponding prediction and "d" is computed as <img src="images/formula2.png">. Here,  <strong><cite>width<sub>bbox</sub></cite></strong>  and  <strong><cite>height<sub>bbox</sub></cite></strong>  are the width and height of the enclosing rectangle of the ground truth landmarks.
                         <br><br>
                         <strong class="text-danger">Note that </strong>&ensp; only the successfully detected images will be evaluated for the NME.
                     </p>
@@ -243,11 +244,11 @@
             <div class="trend-entry d-flex">
                 <div class="trend-contents">
                    <ul>
-                        <li><p>The upper bound of computational complexity is 1 GFLOPs.</p></li>
-                       <li><p>The upper bound of model size is 20MB</p></li>
+                        <li><p>The upper bound of computational complexity is 100MFLOPs.</p></li>
+                       <li><p>The upper bound of model size is 2MB.</p></li>
                        <li><p>We provide the bounding boxes obtained by our detector for training/validation/test sets. The participants are also allowed to employ their own face detectors.</p></li>
                        <li><p>Except for the face detectors, any external datasets and models are not allowed. Any test augmentation and multi-model ensemble strategy are not allowed, either.</p></li>
-                       <li><p>During the validation phase, each team could send a compressed file (.zip/.tar/.tar.gz), consisting of 2,000 landmark files (.txt) of the validation set, to <a href="mailto:FLLC_ICPR2020@163.com">FLLC_ICPR2020@163.com</a>. We will return the performance to the participants and update the leaderboard. Each file (.txt) should contain the number of key points along with the predicted coordinates for each point (with integer format). An example is shown in Fig. 2. The coordinates of the top left corner is [0, 0], where the first number refers to horizontal coordinate and the second number refers to vertical coordinate. If multiple faces are detected by the face detector, please just choose the one which has the biggest IOU with the provided bounding box as the output. Note that each team can only submit once per day.</p></li>
+                       <li><p>During the validation phase, each team could send a compressed file (.zip/.tar/.tar.gz), consisting of 2,000 landmark files (.txt) of the validation set, to <a href="mailto:fllc3_icme@163.com">fllc3_icme@163.com</a>. We will return the performance to the participants and update the leaderboard. Each file (.txt) should contain the number of key points along with the predicted coordinates for each point (with integer format). An <a href="https://github.com/fllc3-icme2021/fllc3-icme2021.github.io/blob/main/example.txt">example</a> is shown in Fig. 2. The coordinates of the top left corner is [0, 0], where the first number refers to horizontal coordinate and the second number refers to vertical coordinate. If multiple faces are detected by the face detector, please just choose the one which has the biggest IOU with the provided bounding box as the output. Note that each team can only submit once per day.</p></li>
                        <li><p>The test images will be released on Oct. 9, 2020 [00:00 a.m. UTC+1], and each team will have 24 hours to predict the test results. Both the predicted test results (the same format as the validation results) and the training materials (codes, models and technical reports) need to be sent to us before Oct. 10, 2020 [00:00 a.m. UTC+1]. We will re-implement the method to verify the correctness. Any team whose results we cannot reproduce or whose computational complexity or model size cannot satisfy the requirements will be disqualified.</p></li>
                     </ul>
 
