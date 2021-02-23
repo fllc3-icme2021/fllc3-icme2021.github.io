@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <title>FLL3</title>
@@ -181,7 +181,9 @@
                                 For face profile, sometimes it is challengeable but crucial to differentiate different people. Therefore, we take all these points, from 1 to 33, into account and ask for high accuracy.                        </li>
                         </ul>
 
-                        <strong class="text-danger">Important! </strong>&ensp; Although we only take x points into account, you still need to training you model on 106 points and send us the full results. See an example <a href="">Here</a>.
+
+
+                            <strong class="text-danger">Important! </strong>&ensp; Although we only take x points into account, you still need to training you model on 106 points and send us the full results. See an example <a href="">Here</a>.
                                                                 <br>
                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Please strictly follow the format.
                     </div>
@@ -189,7 +191,7 @@
 
 
                     <img src="images/106point.png" align="middle" width="50%">
-                    <p>Figure1: The 106 key-point mark-up used for our annotations</p>
+                    <p>Figure1: The key-points used for our annotations</p>
 
             </div>
             <br><br>
@@ -202,7 +204,7 @@
                 <br><br><br>
 
 
-            <div class="trend-entry d-flex">
+            <div class="trend-entry">
                 <div class="trend-contents">
                     <p>
 
@@ -210,12 +212,17 @@
                         <br>
                         &emsp;&emsp;&emsp; The cumulative curve corresponding to the percentage of test images of which the error is less than a threshold ⍺ will be produced. The area-under-the-curve (AUC) is the area under the cumulative distribution curve calculated up to the threshold ⍺, then divided by that threshold. We set the value of ⍺ to be 0.08. Similarly, we consider each image with a point-to-point normalized mean error of α or greater as failure. NME is computed as:
                     </p>
+                </div>
+            </div>
 
-                    <img src="images/formula.png" align="middle" width="40%">
+                    <img src="images/formula.png" align="middle" >
+                    <br><br>
 
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
 
                     <p>
-                        where "x" denotes the ground truth landmarks for a given face, "y" denotes the corresponding prediction and "d" is computed as <img src="images/formula1.png" width="25%">. Here,  <strong><cite>width<sub>bbox</sub></cite></strong>  and  <strong><cite>height<sub>bbox</sub></cite></strong>  are the width and height of the enclosing rectangle of the ground truth landmarks.
+                        where "x" denotes the ground truth landmarks for a given face, "y" denotes the corresponding prediction and "d" is computed as <img src="images/formula1.png">. Here,  <strong><cite>width<sub>bbox</sub></cite></strong>  and  <strong><cite>height<sub>bbox</sub></cite></strong>  are the width and height of the enclosing rectangle of the ground truth landmarks.
                         <br><br>
                         <strong class="text-danger">Note that </strong>&ensp; only the successfully detected images will be evaluated for the NME.
                     </p>
@@ -226,11 +233,40 @@
         </div>
 
 
-<!------------------------  Submission Guidelines  ----------------------->
-        <br><br><br>
-        <div class="col-lg-12" id="Submission" style="padding-top:80px;margin-top:-80px;">
+
+<!------------------------  detail requirements  ----------------------->
+        <div class="col-lg-12" id="details" style="padding-top:80px;margin-top:-80px;">
             <div class="section-title">
                 <br><br><br>
+                <h2>detail requirements</h2>
+            </div>
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                   <ul>
+                        <li><p>The upper bound of computational complexity is 1 GFLOPs.</p></li>
+                       <li><p>The upper bound of model size is 20MB</p></li>
+                       <li><p>We provide the bounding boxes obtained by our detector for training/validation/test sets. The participants are also allowed to employ their own face detectors.</p></li>
+                       <li><p>Except for the face detectors, any external datasets and models are not allowed. Any test augmentation and multi-model ensemble strategy are not allowed, either.</p></li>
+                       <li><p>During the validation phase, each team could send a compressed file (.zip/.tar/.tar.gz), consisting of 2,000 landmark files (.txt) of the validation set, to <a href="mailto:FLLC_ICPR2020@163.com">FLLC_ICPR2020@163.com</a>. We will return the performance to the participants and update the leaderboard. Each file (.txt) should contain the number of key points along with the predicted coordinates for each point (with integer format). An example is shown in Fig. 2. The coordinates of the top left corner is [0, 0], where the first number refers to horizontal coordinate and the second number refers to vertical coordinate. If multiple faces are detected by the face detector, please just choose the one which has the biggest IOU with the provided bounding box as the output. Note that each team can only submit once per day.</p></li>
+                       <li><p>The test images will be released on Oct. 9, 2020 [00:00 a.m. UTC+1], and each team will have 24 hours to predict the test results. Both the predicted test results (the same format as the validation results) and the training materials (codes, models and technical reports) need to be sent to us before Oct. 10, 2020 [00:00 a.m. UTC+1]. We will re-implement the method to verify the correctness. Any team whose results we cannot reproduce or whose computational complexity or model size cannot satisfy the requirements will be disqualified.</p></li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="section-title">
+            <img src="images/example.jpg" alt="Fig. 2 Example of the landmark file", align="middle">
+            <p>Fig. 2 Example of the landmark file.</p>
+        </div>
+
+
+<!------------------------  Submission Guidelines  ----------------------->
+        <div class="col-lg-12" id="Submission" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <br><br>
                 <h2>Submission Guidelines</h2>
             </div>
             <div class="trend-entry d-flex">
