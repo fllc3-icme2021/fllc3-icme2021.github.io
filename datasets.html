@@ -151,7 +151,7 @@
                     <br><br><br>
                     <div class="trend-entry d-flex">
                     <p>
-                        &emsp;&emsp;&emsp; The structure of files that competitors can get is shown below. The file <code>picture_mask</code> means face photos with the virtual or real mask. The algorithm is publicly opened in <a href="https://github.com/JDAI-CV/FaceX-Zoo">FaceX-zoo</a>. Besides, we use <a href="https://github.com/JDAI-CV/lapa-dataset">Lapa</a>, a face parsing model, to deal with facial occlusion.
+                        &emsp;&emsp;&emsp; The structure of files that competitors can get is shown below. The file <code>picture_mask</code> means face photos with the virtual or real mask. The algorithm is publicly opened in <a href="https://github.com/JDAI-CV/FaceX-Zoo">FaceX-zoo</a>. Besides, we use <a href="https://github.com/JDAI-CV/lapa-dataset">Lapa</a>, a face parsing module, to deal with facial occlusion.
                         We highly encourage competitors to use their own mask-add algorithms to add virtual masks, so we provide the original non-masked pictures, called <code>picture</code>.
 
                     </p>
@@ -159,6 +159,7 @@
 
                     <img src="images/tree.png" align="middle" width="20%">
                     <p>Figure1: Structure of file</p>
+                    <br>
 
 
 
@@ -171,11 +172,14 @@
                         <br>
                         <p>
                             We collect an incremental dataset named JD-landmark-mask.
-                            Besides the face images in JD-landmark [3] dataset, we
+                            Besides the face images in JD-landmark<sup>[1]</sup> dataset, we
                             provide the virtual-masked face images by utilizing our
-                            virtual mask addition algorithm. This dataset, containing
-                            about 40,000 faces, is applied as the training dataset.
-                            It is accessible to the participants (with landmark annotations).
+                            virtual mask addition algorithm<sup>[3]</sup> This dataset, containing
+                            about 40,000 faces, is accessible to the participants (with landmark annotations).
+                            participants should train their model on the masked pictures.
+                            The images and landmarks will be released on March 1, 2021.
+
+                            <br>
                             Fig.2 shows some examples in which the first row refers to the
                             real face image and the second row refers to the virtual masked image.
                         </p>
@@ -185,19 +189,6 @@
                             The first row: non-masked face image.
                             The second row: virtual-masked image</p>
                     </div>
-
-                        <ul>
-<!--                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>-->
-                            <li><strong>Download: </strong> The training dataset is available at <a
-                                    href="">Here</a>, val and test dataset are available at <a
-                                        href="">Baidu Drive </a> and <a
-                                        href="">Google Drive</a> <br/>
-<!--                                <strong class="text-danger">Note: </strong> The image label information can be extracted using the <a href="https://drive.google.com/open?id=1ajioybXZYPIXUyQl7G4MRykr7AvelAL6">scripts</a> </li>-->
-<!--                            <li><strong>Submission: </strong> <a-->
-<!--                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview</a>-->
-                            </li>
-                        </ul>
-
                     </div>
                 </div>
 
@@ -208,23 +199,26 @@
                         <h4>Validation dataset:</h4>
                         <br>
                         <p>
-                            It consists of 2000 in-the-wild non-masked images,
-                            and 2000 virtual-masked images which are generated
+                            It consists of 2000 virtual-masked images which are generated
                             by the same method as the training dataset. The participants’
                             models will be evaluated on this set before the final evaluation.
+
+                            The masked images without ground truth will be released on March 1, 2021, simultaneously.
+
+
                         </p>
 
-                        <ul>
-<!--                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>-->
-                            <li><strong>Download: </strong> The training dataset is available at <a
-                                    href="">Here</a>, val and test dataset are available at <a
-                                        href="">Baidu Drive </a> and <a
-                                        href="">Google Drive</a> <br/>
-<!--                                <strong class="text-danger">Note: </strong> The image label information can be extracted using the <a href="https://drive.google.com/open?id=1ajioybXZYPIXUyQl7G4MRykr7AvelAL6">scripts</a> </li>-->
-<!--                            <li><strong>Submission: </strong> <a-->
-<!--                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview</a>-->
-                            </li>
-                        </ul>
+<!--                        <ul>-->
+<!--&lt;!&ndash;                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>&ndash;&gt;-->
+<!--                            <li><strong>Download: </strong> The training dataset is available at <a-->
+<!--                                    href="">Here</a>, val and test dataset are available at <a-->
+<!--                                        href="">Baidu Drive </a> and <a-->
+<!--                                        href="">Google Drive</a> <br/>-->
+<!--&lt;!&ndash;                                <strong class="text-danger">Note: </strong> The image label information can be extracted using the <a href="https://drive.google.com/open?id=1ajioybXZYPIXUyQl7G4MRykr7AvelAL6">scripts</a> </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><strong>Submission: </strong> <a&ndash;&gt;-->
+<!--&lt;!&ndash;                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview</a>&ndash;&gt;-->
+<!--                            </li>-->
+<!--                        </ul>-->
 
                     </div>
                 </div>
@@ -232,34 +226,27 @@
                 <div class="trend-entry d-flex">
                     <div class="trend-contents">
 
-                        <!----------------    training set   ------------>
+                        <!----------------    test set   ------------>
                         <h4>Test dataset:</h4>
                         <br>
                         <p>
-                            It contains 2000 in-the-wild non-masked images and
-                            2000 real-masked images which are collected from the internet.
-                            Please be notified that there are no virtual-masked images in
-                            the final evaluation and the test dataset is blind to participants
-                            throughout the whole competition. It will be used for the final evaluation.
+                            It contains 2000 in-the-wild real-masked images and
+                            2000 virtual-masked images which are collected from the internet.
+                            It will be used for the final evaluation.
+                            <br>
+                            To prevent cheating on the test set, the test images will <strong>not</strong> be released to participants.
+                            And participants need to submit their model within one week, from April 1 - April 7.
+
                         </p>
 
                         <ul>
-<!--                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>-->
-                            <li><strong>Download: </strong> The training dataset is available at <a
-                                    href="">Here</a>, val and test dataset are available at <a
-                                        href="">Baidu Drive </a> and <a
-                                        href="">Google Drive</a> <br/>
-                                <strong class="text-danger">Note: </strong>&ensp;there are <strong>no</strong> virtual-masked images in
-                                    the final evaluation and
-                                <br>
-                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                                the test dataset is <strong>blind</strong> to participants
-                                    throughout the whole competition. </li>
-<!--                            <li><strong>Submission: </strong> <a-->
-<!--                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/556/overview</a>-->
-                            </li>
-                        </ul>
 
+                                <strong class="text-danger">Note!: </strong>
+                                &ensp;
+                                the test dataset is <strong>blind</strong> to participants
+                                    throughout the whole competition.
+
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -268,7 +255,6 @@
 
 
 <!------------------------  Information  ----------------------->
-        <br><br>
         <div class="col-lg-12" id="information" style="padding-top:80px;margin-top:-80px;">
             <div class="section-title">
                 <br><br><br>
@@ -308,22 +294,30 @@
                     <p>
                         <strong>please cite our paper, if you want to use the dataset.</strong>
                         <br><br>
-                        <code>
-                        &emsp;@inproceedings{liu2020new,
-                        <br>
-                            &emsp;&emsp; title={A New Dataset and Boundary-Attention Semantic Segmentation for Face Parsing.},
-                        <br>
-                            &emsp;&emsp; author={Liu, Yinglu and Shi, Hailin and Shen, Hao and Si, Yue and Wang, Xiaobo and Mei, Tao},
-                        <br>
-                            &emsp;&emsp; booktitle={AAAI},
-                        <br>
-                            &emsp;&emsp; pages={11637--11644},
-                        <br>
-                            &emsp;&emsp; year={2020}
-                        <br>
-                        &emsp;}
-                        <br>
-                        </code>
+
+
+                    [1] Y. Liu, H. Shen, Y. Si, X. Wang, X. Zhu, H. Shi et al. Grand challenge of 106-point facial landmark localization. In ICMEW, 2019.
+                    <br>
+                    [2] Y. Liu, H. Shi, H. Shen, Y. Si, X. Wang, T. Mei. A New Dataset and Boundary-Attention Semantic Segmentation for Face Parsing. In AAAI, 2020.
+                    <br>
+                    [3] J. Wang, Y. Liu, Y. Hu, H. Shi, T. Mei. FaceX-Zoo: A PyTorch Toolbox for Face Recognition. In arXiv, 2021.
+
+<!--                        <code>-->
+<!--                        &emsp;@inproceedings{liu2020new,-->
+<!--                        <br>-->
+<!--                            &emsp;&emsp; title={A New Dataset and Boundary-Attention Semantic Segmentation for Face Parsing.},-->
+<!--                        <br>-->
+<!--                            &emsp;&emsp; author={Liu, Yinglu and Shi, Hailin and Shen, Hao and Si, Yue and Wang, Xiaobo and Mei, Tao},-->
+<!--                        <br>-->
+<!--                            &emsp;&emsp; booktitle={AAAI},-->
+<!--                        <br>-->
+<!--                            &emsp;&emsp; pages={11637&#45;&#45;11644},-->
+<!--                        <br>-->
+<!--                            &emsp;&emsp; year={2020}-->
+<!--                        <br>-->
+<!--                        &emsp;}-->
+<!--                        <br>-->
+<!--                        </code>-->
                     </p>
                 </div>
             </div>
