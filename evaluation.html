@@ -146,8 +146,62 @@
 
         <div class="col-lg-12" id="criteria" style="padding-top:80px;margin-top:-80px;">
             <div class="section-title">
-                <h2>Evaluation criteria</h2>
+                <h2>restriction</h2>
+
+                    <br><br>
+
+                <!--        assign some points        -->
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+
+                            &emsp;&emsp;&emsp;
+                        <p>Due to the invisibility of faces under the mask and racial diversity, there are inevitable differences when people predict the facial landmarks in these areas. For fairness, we only take some stable points into account.</p>
+
+                        <ul>
+
+                        <li>
+                            <p>
+                                In the nose area, points 53, 54, 55, and 61, matter. Even though people's noses are inborn different from each other, the bridge of the nose is fixed. We can leverage the fixed points to measure the length of the nose.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                In the mouth area, points 88, 94, and 103 matter. Mask covers almost the whole mouth, so it is pretty hard to predict what expression it is, so does the width and height of the mouse. However, we can easily predict the midpoint, due to symmetry.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                For the eye and eyebrow area, it is visible. So, we take all the points into account.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                For face profile, sometimes it is challengeable but crucial to differentiate different people. Therefore, we take all these points, from 1 to 33, into account and ask for high accuracy.                        </li>
+                        </ul>
+
+                        <strong class="text-danger">Important! </strong>&ensp; Although we only take x points into account, you still need to training you model on 106 points and send us the full results. See an example <a href="">Here</a>.
+                                                                <br>
+                               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Please strictly follow the format.
+                    </div>
+                </div>
+
+
+                    <img src="images/106point.png" align="middle" width="50%">
+                    <p>Figure1: The 106 key-point mark-up used for our annotations</p>
+
             </div>
+            <br><br>
+
+
+
+
+            <div class="section-title">
+                <h2>Evaluation criteria</h2>
+                <br><br><br>
+
+
             <div class="trend-entry d-flex">
                 <div class="trend-contents">
                     <p>
@@ -157,9 +211,8 @@
                         &emsp;&emsp;&emsp; The cumulative curve corresponding to the percentage of test images of which the error is less than a threshold ⍺ will be produced. The area-under-the-curve (AUC) is the area under the cumulative distribution curve calculated up to the threshold ⍺, then divided by that threshold. We set the value of ⍺ to be 0.08. Similarly, we consider each image with a point-to-point normalized mean error of α or greater as failure. NME is computed as:
                     </p>
 
-<!--                    <div class="title_centre">-->
-                    <img src="images/formula.png" width="40%" class="text-center">
-<!--                    </div>-->
+                    <img src="images/formula.png" align="middle" width="40%">
+
 
                     <p>
                         where "x" denotes the ground truth landmarks for a given face, "y" denotes the corresponding prediction and "d" is computed as <img src="images/formula1.png" width="25%">. Here,  <strong><cite>width<sub>bbox</sub></cite></strong>  and  <strong><cite>height<sub>bbox</sub></cite></strong>  are the width and height of the enclosing rectangle of the ground truth landmarks.
@@ -169,6 +222,7 @@
 
                 </div>
             </div>
+        </div>
         </div>
 
 
