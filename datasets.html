@@ -152,8 +152,12 @@
                     <br><br><br>
                     <div class="trend-entry d-flex">
                     <p>
-                        &emsp;&emsp;&emsp; The structure of files that competitors can get is shown below. The file <code>picture_mask</code> means face photos with the virtual or real mask. The algorithm is publicly opened in <a href="https://github.com/JDAI-CV/FaceX-Zoo">FaceX-zoo<sup>[3]</sup></a>. Besides, we use <a href="https://github.com/JDAI-CV/lapa-dataset">Lapa<sup>[2]</sup></a></a>, a face parsing module, to deal with facial occlusion.
-                        We highly encourage competitors to use their own mask-add algorithms to add virtual masks, so we provide the original non-masked pictures, called <code>picture</code>.
+                        &emsp;&emsp; The structure of files that competitors can get is shown below. The file <code>picture_mask</code> means face images covered by virtual masks. The algorithm is publicly opened in <a href="https://github.com/JDAI-CV/FaceX-Zoo">FaceX-zoo<sup>[3]</sup></a>. Besides, we use <a href="https://github.com/JDAI-CV/lapa-dataset">Lapa<sup>[2]</sup></a></a>, a face parsing module, to deal with facial occlusion.
+                        <br>
+                        &emsp;&emsp; We also allow participants to use their own mask-add algorithms and additional images for training.
+                        However, once using, it is necessary to explain in detail
+                        what additional datasets and mask-add methods are adopted when you submit the model and paper.
+                        Meanwhile, you should send the datasets to us, because we will reproduce and check the results.
 
                     </p>
                     </div>
@@ -173,16 +177,13 @@
                         <br>
                         <p>
                             We collect an incremental dataset named JD-landmark-mask.
-                            Besides the face images in JD-landmark<sup>[1]</sup> dataset, we
+                            Base on the face images in JD-landmark<sup>[1, 4-9]</sup> dataset, we
                             provide the virtual-masked face images by utilizing our
-                            virtual mask addition algorithm<sup>[3]</sup> This dataset, containing
-                            about 40,000 faces, is accessible to the participants (with landmark annotations).
+                            virtual mask-add algorithm<sup>[3]</sup> This dataset, containing
+                            about 20,386 faces, is accessible to the participants (with landmark annotations).
                             participants should train their model on the masked pictures.
                             The images and landmarks will be released on March 1, 2021.
 
-                            <br>
-                            Fig.2 shows some examples in which the first row refers to the
-                            real face image and the second row refers to the virtual masked image.
                         </p>
                     <div class="section-title">
                         <img src="images/masked_ex.png" align="middle">
@@ -198,7 +199,7 @@
                         <h4>Validation dataset:</h4>
                         <br>
                         <p>
-                            It consists of 2000 virtual-masked images which are generated
+                            It consists of 2000 virtual-masked images<sup>[10]</sup> which are generated
                             by the same method as the training dataset. The participants’
                             models will be evaluated on this set before the final evaluation.
 
@@ -206,8 +207,6 @@
                             <br>
                             During the validation phase (March 1 - March 31, 2021), participants could sent the results on the validation set to us,
                             and we will return the performance to the participants by updating the leaderboard. Each team could only submit once a day.
-
-
 
                         </p>
 
@@ -238,7 +237,8 @@
                             It will be used for the final evaluation.
                             <br>
                             To prevent cheating on the test set, the test images will <strong>not</strong> be released to participants.
-                            And participants need to submit their model within one week, from April 1 - April 7.
+                            And participants need to submit their model and paper within a week, from April 1 - April 7.
+                            Specifically, all the training materials including codes, models and technical reports need to be sent to us before April 7, 2021.
 
                         </p>
 
@@ -284,7 +284,7 @@
 
 <!-------------------------------  citation        --------------------------->
 
-        <br><br><br>
+
         <div class="col-lg-12" id="citation" style="padding-top:80px;margin-top:-80px;">
             <div class="section-title">
                 <br><br><br>
@@ -304,27 +304,46 @@
                     <br>
                     [3] J. Wang, Y. Liu, Y. Hu, H. Shi, T. Mei. FaceX-Zoo: A PyTorch Toolbox for Face Recognition. In arXiv, 2021.
 
-<!--                        <code>-->
-<!--                        &emsp;@inproceedings{liu2020new,-->
-<!--                        <br>-->
-<!--                            &emsp;&emsp; title={A New Dataset and Boundary-Attention Semantic Segmentation for Face Parsing.},-->
-<!--                        <br>-->
-<!--                            &emsp;&emsp; author={Liu, Yinglu and Shi, Hailin and Shen, Hao and Si, Yue and Wang, Xiaobo and Mei, Tao},-->
-<!--                        <br>-->
-<!--                            &emsp;&emsp; booktitle={AAAI},-->
-<!--                        <br>-->
-<!--                            &emsp;&emsp; pages={11637&#45;&#45;11644},-->
-<!--                        <br>-->
-<!--                            &emsp;&emsp; year={2020}-->
-<!--                        <br>-->
-<!--                        &emsp;}-->
-<!--                        <br>-->
-<!--                        </code>-->
                     </p>
                 </div>
             </div>
         </div>
 
+<!------------------------ reference ------------------------>
+
+            <!-------------------------------  citation        --------------------------->
+
+
+        <div class="col-lg-12" id="reference" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <br><br><br>
+                <h2>reference</h2>
+            </div>
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                    <p>
+                    <p>
+
+
+[4] C. Sagonas, G. Tzimiropoulos, S. Zafeiriou, and M. Pantic. 300 faces in-the-wild challenge: The first facial landmark localization Challenge. In ICCVW, 2013.
+<br>
+[5] C. Sagonas, E. Antonakos, G. Tzimiropoulos, S. Zafeiriou, and M. Pantic. 300 faces in-the-wild challenge: Database and results. In IVC, 2016.
+<br>
+[6] Belhumeur, P., Jacobs, D., Kriegman, D., Kumar, N. Localizing parts of faces using a consensus of exemplars. In Computer Vision and Pattern Recognition. In CVPR, 2011.
+<br>
+[7] X. Zhu, D. Ramanan. Face detection, pose estimation and landmark localization in the wild. In CVPR, 2012.
+<br>
+[8] Vuong Le, Jonathan Brandt, Zhe Lin, Lubomir Boudev, Thomas S. Huang. Interactive facial feature localization. In ECCV, 2012.
+<br>
+[9] C. Sagonas, G. Tzimiropoulos, S. Zafeiriou, and M. Pantic. A semi-automatic methodology for facial landmark annotation. In CVPR, 2013.
+<br>
+[10] I. Kemelmacher-Shlizerman, S. M. Seitz, D. Miller, and E. Brossard. The megaface benchmark: 1 million faces for recognition at scale. In CVPR, 2016.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
 
 </div>
 
