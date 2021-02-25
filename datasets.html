@@ -152,12 +152,17 @@
                     <br><br><br>
                     <div class="trend-entry d-flex">
                     <p>
-                        &emsp;&emsp; The structure of files that competitors can get is shown below. The file <code>picture_mask</code> means face images covered by virtual masks. The algorithm is publicly opened in <a href="https://github.com/JDAI-CV/FaceX-Zoo">FaceX-zoo<sup>[3]</sup></a>. Besides, we use <a href="https://github.com/JDAI-CV/lapa-dataset">Lapa<sup>[2]</sup></a></a>, a face parsing module, to deal with facial occlusion.
+                        &emsp;&emsp; The structure of files that competitors can get is shown below. The file <i>picture_mask</i> means face images covered by virtual masks. The algorithm is publicly opened in <a href="https://github.com/JDAI-CV/FaceX-Zoo">FaceX-zoo<sup>[3]</sup></a>.
+                        Besides, we use a face parsing model trained on <a href="https://github.com/JDAI-CV/lapa-dataset">Lapa<sup>[2]</sup></a> dataset to deal with facial occlusion.
+
+                        The file <i>bbox</i> means bounding box, which is obtained by our detector for training/validation sets. You are allowed to employ your own face detectors.
+
+
                         <br>
                         &emsp;&emsp; We also allow participants to use their own mask-add algorithms and additional images for training.
                         However, once using, it is necessary to explain in detail
-                        what additional datasets and mask-add methods are adopted when you submit the model and paper.
-                        Meanwhile, you should send the datasets to us, because we will reproduce and check the results.
+                        what additional datasets and mask-add methods are when you submit the model and paper.
+                        Meanwhile, you need to send the datasets to fllc3_icme@163.com, so that we can reproduce and check the results.
 
                     </p>
                     </div>
@@ -179,7 +184,7 @@
                             We collect an incremental dataset named JD-landmark-mask.
                             Base on the face images in JD-landmark<sup>[1, 4-9]</sup> dataset, we
                             provide the virtual-masked face images by utilizing our
-                            virtual mask-add algorithm<sup>[3]</sup> This dataset, containing
+                            virtual mask-add algorithm<sup>[3]</sup>. This dataset, containing
                             about 20,386 faces, is accessible to the participants (with landmark annotations).
                             participants should train their model on the masked pictures.
                             The images and landmarks will be released on March 1, 2021.
@@ -205,9 +210,10 @@
 
                             The masked images without ground truth will be released on March 1, 2021, simultaneously.
                             <br>
-                            During the validation phase (March 1 - March 31, 2021), participants could sent the results on the validation set to us,
+                            During the validation phase (March 1 - March 31, 2021), participants could send the results on the validation set to us,
                             and we will return the performance to the participants by updating the leaderboard. Each team could only submit once a day.
 
+                            For more information, please refer to <a href="evaluation.html#guidelines" >submission guidelines</a>.
                         </p>
 
 <!--                        <ul>-->
@@ -238,7 +244,7 @@
                             <br>
                             To prevent cheating on the test set, the test images will <strong>not</strong> be released to participants.
                             And participants need to submit their model and paper within a week, from April 1 - April 7.
-                            Specifically, all the training materials including codes, models and technical reports need to be sent to us before April 7, 2021.
+                            Specifically, all the training materials including codes, models, and technical reports need to be sent to us before April 7, 2021.
 
                         </p>
 
@@ -271,7 +277,7 @@
                     <li><p>You agree not to reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.</p></li>
                     <li><p>You agree not to further copy, publish or distribute any portion of annotations of the dataset. Except, for internal use at a single site within the same organization it is allowed to make copies of the dataset.</p></li>
                     <li><p>We reserve the right to terminate your access to the dataset at any time.</p></li>
-                    <li><p>You will be responsible for the consequences if violated .</p></li>
+                    <li><p>You will be responsible for the consequences if violated.</p></li>
 
                     </ul>
                 </div>
