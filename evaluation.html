@@ -134,79 +134,71 @@
 
 <div class="site-section">
     <div class="container">
-        <div class="row">
-             <div class="col-lg-12" id="schedule">
-
-            </div>
 
 
 
 
-
-<!------------------------  Evaluation criteria  ----------------------->
-
-        <div class="col-lg-12" id="constraint" style="padding-top:80px;margin-top:-80px;">
+<!------------------------  SUBMISSION GUIDELINES  ----------------------->
+        <div class="col-lg-12" id="guidelines" style="padding-top:80px;margin-top:-80px;">
             <div class="section-title">
-                <h2>constraint</h2>
+                <h2>SUBMISSION GUIDELINES</h2>
+            </div>
+            <div class="trend-entry d-flex">
+                <div class="trend-contents">
+                   <ul>
+                        <li><p>The upper bound of computational complexity is 100MFLOPs.</p></li>
+                       <li><p>The upper bound of the model size is 2MB.</p></li>
+                       <li><p>We provide the bounding boxes obtained by our detector for training/validation sets. The participants are also allowed to employ their own face detectors.</p></li>
+<!--                       <li><p>Except for the face detectors, any external datasets and models are not allowed. Any test augmentation and multi-model ensemble strategy are not allowed, either.</p></li>-->
+                       <li><p>During the validation phase, each team could send a compressed file (<code>.zip</code> only),
+                           consisting of 2,000 landmark files (<code>.txt</code>) of the validation set, to <a href="mailto:fllc3_icme@163.com">
+                               fllc3_icme@163.com</a>. We will return the performance to the participants by updating the leaderboard.
+                           Each file (.txt) should contain the number of key points along with the predicted coordinates for each point
+                           (with integer format). An <a href="https://github.com/MitchellX/fllc3-icme2021.github.io/blob/main/example.txt">
+                               example</a> is shown in Fig. 2. The coordinates of the top left corner is [0, 0],
+                           where the first number refers to horizontal coordinate and the second number refers to vertical coordinate.
+                           If multiple faces are detected by the face detector, please just choose the one which has the biggest IOU
+                           with the provided bounding box as the output. Note that each team can only submit once a day.</p></li>
 
-                    <br><br>
+                       <li><p>
 
-                <!--        assign some points        -->
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
+                           The participants should strictly name their e-mail subject in <code>teamname</code>_FLL3submission format
+                           and name Attachment in <code>teamname</code>_mmddyy.zip format.
+                           For instance, my team's name is giant and it's February 24, 2021 today. So the subject and attachment of e-mails should be
+                           <strong>giant_FLL3submission</strong> and <strong>giant_02242021.zip</strong>, respectively.
+                       </p></li>
 
-                            &emsp;&emsp;&emsp;
-                        <p>Due to the invisibility of nose and mouth under the mask, there are inevitable diversity when people predict the facial landmarks in these areas.
-                            For fairness, we decide to delete some points which are variable along with change in expression.</p>
-
-                        <ul>
-
-                        <li>
-                            <p>
-                                In the nose area, we delete points 57-60, 62-65. Even though people's noses are inborn different from each other, the bridge of the nose is fixed.
-                                We can leverage the fixed points, 53, 54, 55, and 61, to measure the length of the nose.
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                In the mouth area, we delete points 85-87, 89-93, 94-98, 100-102. Mask covers almost the whole mouth, so it is pretty hard to predict what expression it is, so does the width and height of the mouse.
-                                However, we can easily predict the midpoint, 88, 99, 103, and 94, due to symmetry.
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                In the eye and eyebrow area, it is visible. So, we take all the points into account.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                For face profile, sometimes it is challengeable but crucial to differentiate different people. Therefore, we take all these points, from 1 to 33, into account and ask for high accuracy.                        </li>
-                        </ul>
+                            <strong class="text-danger">Important! </strong>&ensp;
+                       You can't get feedback if using the wrong format, since we are using auto grader.
+                       <br><br>
 
 
+                       <li><p>
+                           During the test phase, participants need to submit their model and paper within a week, from April 1 - April 7. It will be used for the final evaluation. Specifically, all the training materials including codes, models, and technical reports need to be sent to us before April 7, 2021. To prevent cheating on the test set, the test images will <strong>not</strong> be released to participants.
 
-                            <strong class="text-danger">Important! </strong>&ensp; Although we only take 82 points into account, you still need to training you model on 106 points and send us the full results. See an example <a href="https://github.com/fllc3-icme2021/fllc3-icme2021.github.io/blob/main/example.txt">Here</a>.
-                                                                <br>
-                               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Please strictly follow the format.
-                    </div>
+                       </p></li>
+
+                       <li><p>
+                       The authors acknowledge that if they decide to submit, the resulting curve might be used by the organizers in any related visualizations/results.
+                       The authors are prohibited from sharing the results with other contesting teams.
+                       </p></li>
+                   </ul>
                 </div>
-
-
-                    <img src="images/106point.jpg" align="middle" width="50%">
-                    <p>Figure1: The key-points used for our annotations</p>
-
             </div>
-            <br><br>
+        </div>
+
+        <div class="section-title">
+            <img src="images/example.jpg" alt="Fig. 2 Example of the landmark file">
+            <p>Fig. 2 Example of the landmark file.</p>
+        </div>
 
 
 
-
-            <div class="section-title">
+        <br><br>
+<!------------------- Evaluation criteria ------------------------>
+        <div class="section-title">
                 <h2>Evaluation criteria</h2>
                 <br><br><br>
-
 
             <div class="trend-entry">
                 <div class="trend-contents">
@@ -227,112 +219,86 @@
 
             <div class="trend-entry d-flex">
                 <div class="trend-contents">
-
                     <p>
                         where "x" denotes the ground truth landmarks for a given face, "y" denotes the corresponding prediction and "d" is computed as
                         <img src="images/formula2.png">. Here,  <strong><cite>width<sub>bbox</sub></cite></strong>  and  <strong><cite>height<sub>bbox</sub></cite></strong>
                         are the width and height of the enclosing rectangle of the ground truth landmarks.
-
-<!--                        <strong class="text-danger">Note that </strong>&ensp; only the successfully detected images will be evaluated for the NME.-->
                     </p>
-
                 </div>
             </div>
-                            <img src="images/AUC_curve2.jpg" align="middle" >
+
+            <img src="images/AUC_curve2.jpg" align="middle" >
         </div>
-        </div>
 
 
-            <br><br>
 
 
-<!------------------------  detail requirements  ----------------------->
-        <div class="col-lg-12" id="guidelines" style="padding-top:80px;margin-top:-80px;">
+
+<!------------------------  constraint  ----------------------->
+
+        <div class="col-lg-12" id="constraint" style="padding-top:80px;margin-top:-80px;">
             <div class="section-title">
-                <br><br><br>
-                <h2>SUBMISSION GUIDELINES</h2>
-            </div>
-            <div class="trend-entry d-flex">
-                <div class="trend-contents">
-                   <ul>
-                        <li><p>The upper bound of computational complexity is 100MFLOPs.</p></li>
-                       <li><p>The upper bound of model size is 2MB.</p></li>
-                       <li><p>We provide the bounding boxes obtained by our detector for training/validation/test sets. The participants are also allowed to employ their own face detectors.</p></li>
-                       <li><p>Except for the face detectors, any external datasets and models are not allowed. Any test augmentation and multi-model ensemble strategy are not allowed, either.</p></li>
-                       <li><p>During the validation phase, each team could send a compressed file (<code>.zip</code> only),
-                           consisting of 2,000 landmark files (.txt) of the validation set, to <a href="mailto:fllc3_icme@163.com">
-                               fllc3_icme@163.com</a>. We will return the performance to the participants by updating the leaderboard.
-                           Each file (.txt) should contain the number of key points along with the predicted coordinates for each point
-                           (with integer format). An <a href="https://github.com/fllc3-icme2021/fllc3-icme2021.github.io/blob/main/example.txt">
-                               example</a> is shown in Fig. 2. The coordinates of the top left corner is [0, 0],
-                           where the first number refers to horizontal coordinate and the second number refers to vertical coordinate.
-                           If multiple faces are detected by the face detector, please just choose the one which has the biggest IOU
-                           with the provided bounding box as the output. Note that each team can only submit once a day.</p></li>
+<!--                <h2>constraint</h2>-->
 
-                       <li><p>
+                <!--        assign some points        -->
+                <div class="trend-entry d-flex">
+                    <div class="trend-contents">
+                        <h3><i>constraint:</i></h3>
 
-                           The participants should strictly name their e-mail subject in FLL3_submission_<code>teamname</code> format
-                           and name Attachment in <code>teamname</code>_mmddyy.zip format.
-                           For instance, my team's name is giant. So the subject and attachment of e-mails should be <strong>FLL3_submission_giant</strong> and <strong>giant_02242021.zip</strong>, respectively.
-
-                       </p></li>
-
-                       <li><p>
-                           During the test phase, participants need to submit their model and paper within a week, from April 1 - April 7. It will be used for the final evaluation. Specifically, all the training materials including codes, models and technical reports need to be sent to us before April 7, 2021. To prevent cheating on the test set, the test images will <strong>not</strong> be released to participants.
-
-                       </p></li>
-
-                       <li><p>
-                       The authors acknowledge that if they decide to submit, the resulting curve might be used by the organizers in any related visualizations/results.
-                       The authors are prohibited from sharing the results with other contesting teams.
-                       </p></li>
-                   </ul>
+                        <p> &emsp;&emsp;  Due to the invisibility of the nose and mouth under the mask, there are inevitable diversities
+                            when people predict the facial landmarks in these areas.
+                            For fairness, we decide to ignore some abnormal points when we do evaluations on validation & test sets.
 
 
+                        </p>
 
+                        <ul>
+
+                        <li>
+                            <p>
+                                In the nose area, we ignore points 57-60, 62-65. Even though people's noses are inborn different from each other, the bridge of the nose is fixed.
+                                We can leverage the fixed points, 53, 54, 55, and 61, to measure the length of the nose.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                In the mouth area, we ignore points 85-87, 89-93, 94-98, 100-102. Mask covers almost the whole mouth, so it is pretty hard to predict what expression it is, so does the width and height of the mouse.
+                                However, we can easily predict the midpoint, 88, 99, 103, and 94, due to symmetry.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                In the eye and eyebrow area, it is visible. So, we take all the points into account.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                For face profile, sometimes it is challengeable but crucial to differentiate different people. Therefore, we take all these points, from 1 to 33, into account and ask for high accuracy.                        </li>
+                        </ul>
+
+
+
+                            <strong class="text-danger">Important! </strong>&ensp; Although we only take 82 points into account, you still need to training you model on 106 points and send us the full results.
+                                        See an example <a href="https://github.com/MitchellX/fllc3-icme2021.github.io/blob/main/example.txt">Here</a>.
+                                                                <br>
+                               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Please strictly follow the format.
+                    </div>
                 </div>
+
+
+                    <img src="images/106point.jpg" align="middle" width="50%">
+                    <p>Figure1: The key-points used for our annotations</p>
+
             </div>
+
+
+
+
+<!----------------------- container ----------------->
         </div>
-        </div>
-        <div class="section-title">
-            <img src="images/example.jpg" alt="Fig. 2 Example of the landmark file", align="middle">
-            <p>Fig. 2 Example of the landmark file.</p>
-        </div>
-
-
-<!------------------------  Submission Guidelines  ----------------------->
-<!--        <div class="col-lg-12" id="Submission" style="padding-top:80px;margin-top:-80px;">-->
-<!--            <div class="section-title">-->
-<!--                <br><br>-->
-<!--                <h2>Submission Guidelines</h2>-->
-<!--            </div>-->
-<!--            <div class="trend-entry d-flex">-->
-<!--                <div class="trend-contents">-->
-<!--                    <ul>-->
-
-<!--                        <li>-->
-<!--                            <p> During the validation phase, participants could sent their  results on the validation set to us by e-mail,-->
-<!--                            and we will return the performance to the participants by updating the leaderboard. Each team could only submit once a day.-->
-<!--                            </p>-->
-<!--                        </li>-->
-
-<!--                        <li>-->
-<!--                            <p> During April 1, 2021-April 7, 2021, participants should send their model and paper to fllc3_icme@163.com for the final evaluation.-->
-<!--                            </p>-->
-<!--                        </li>-->
-
-<!--                        <li>-->
-<!--                            <p>The authors acknowledge that if they decide to submit, the resulting curve might be used by the organizers in any related visualizations/results. The authors are prohibited from sharing the results with other contesting teams.-->
-<!--                            </p>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-
-<!--</div>-->
-
+    </div>
 
 
 <!-------------------------------   boarder  ---------------------------------------->
