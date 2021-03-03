@@ -153,8 +153,8 @@
                        <li><p>During the validation phase, each team could send a compressed file (<code>.zip</code> only),
                            consisting of 2,000 landmark files (<code>.txt</code>) of the validation set, to <a href="mailto:fllc3_icme@163.com">
                                fllc3_icme@163.com</a>. We will return the performance to the participants by updating the leaderboard.
-                           Each file (.txt) should contain the number of key points along with the predicted coordinates for each point
-                           (with integer format). An <a href="https://github.com/MitchellX/fllc3-icme2021.github.io/blob/main/example.txt">
+                           Each file (.txt) should contain the number of key points along with the predicted coordinates for each point.
+                           An <a href="https://github.com/MitchellX/fllc3-icme2021.github.io/blob/main/example.txt">
                                example</a> is shown in Fig. 1. The coordinates of the top left corner is [0, 0],
                            where the first number refers to horizontal coordinate and the second number refers to vertical coordinate.
                            If multiple faces are detected by the face detector, please just choose the one which has the biggest IOU
@@ -163,9 +163,9 @@
                        <li><p>
 
                            The participants should strictly name their e-mail subject in <code>teamname</code>_FLL3submission format
-                           and name Attachment in <code>teamname</code>_mmddyy.zip format.
-                           For instance, my team's name is giant and it's February 24, 2021 today. So the subject and attachment of e-mails should be
-                           <strong>giant_FLL3submission</strong> and <strong>giant_02242021.zip</strong>, respectively.
+                           and name Attachment in <code>teamname</code>_mmddyyyy.zip format.
+                           For instance, my team's name is Giant and it's February 24, 2021 today. So the subject and attachment of e-mails should be
+                           <strong>Giant_FLL3submission</strong> and <strong>Giant_02242021.zip</strong>, respectively.
                        </p></li>
 
                             <strong class="text-danger">Important! </strong>&ensp;
@@ -228,7 +228,7 @@
                 </div>
             </div>
 
-            <img src="images/AUC_curve2.jpg" align="middle" >
+<!--            <img src="images/AUC_curve2.jpg" align="middle" >-->
         </div>
 
 
@@ -257,15 +257,21 @@
 
                         <li>
                             <p>
-                                In the nose area, we ignore points 57-60, 62-65. Even though people's noses are inborn different from each other, the bridge of the nose is fixed.
-                                We can leverage the fixed points, 53, 54, 55, and 61, to measure the length of the nose.
+                                In the nose area, we ignore points on the wing of nose (57-60, 62-65),
+                                and only leverage the points 52, 53, 54, 55, 56, 61, and 66 for evaluation.
+
+<!--                                In the nose area, we ignore points 57-60, 62-65. Even though people's noses are inborn different from each other, the bridge of the nose is fixed.-->
+<!--                                We can leverage the fixed points, 52, 53, 54, 55, 56, 61, and 66 to measure the size of the nose.-->
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                In the mouth area, we ignore points 85-87, 89-93, 94-98, 100-102. Mask covers almost the whole mouth, so it is pretty hard to predict what expression it is, so does the width and height of the mouse.
-                                However, we can easily predict the midpoint, 88, 99, 103, and 94, due to symmetry.
+                                In the mouth area, we only consider point 88.
+                                Usually,  mask will cover the whole mouth, and it is pretty hard to predict the shape of mouth due to the individual differences and expression variations. Thus, we only take point 88 into account when computing the NME.
+
+<!--                                Mask covers almost the whole mouth, so it is pretty hard to predict what expression it is, so does the size of mouth.-->
+<!--                                However, we can easily predict the midpoint, 88, due to symmetry.-->
                             </p>
                         </li>
 
