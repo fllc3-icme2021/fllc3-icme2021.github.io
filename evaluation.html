@@ -146,10 +146,12 @@
             <div class="trend-entry d-flex">
                 <div class="trend-contents">
                    <ul>
-                        <li><p>The upper bound of computational complexity is 100MFLOPs.</p></li>
-                       <li><p>The upper bound of the model size is 2MB.</p></li>
-                       <li><p>We provide the bounding boxes obtained by our detector for training/validation sets. The participants are also allowed to employ their own face detectors.</p></li>
-                       <li><p>Any test augmentation and multi-model ensemble strategies are not allowed.</p></li>
+                       <li><p>The upper bound of the model size is 2MB. (storage size of the model file)</p></li>
+                       <li><p>The upper bound of computational complexity is 100MFLOPs. (If your model is trained by PyTorch, THOP is recommended to compute the complexity.)</p></li>
+
+                       <li><p>To improve the accuracy on masked-face scenarios, the model ensemble strategy is allowed.
+                           However, you should know that the limitations of model size and complexity are based on all the models you submit.
+                           Besides, if your model executes multiple times, the model size and complexity will be multiplied. </p></li>
 <!--                       <li><p>Except for the face detectors, any external datasets and models are not allowed. Any test augmentation and multi-model ensemble strategy are not allowed, either.</p></li>-->
                        <li><p>During the validation phase, each team could send a compressed file (<code>.zip</code> only),
                            consisting of 2,000 landmark files (<code>.txt</code>) of the validation set, to <a href="mailto:fllc3_icme@163.com">
