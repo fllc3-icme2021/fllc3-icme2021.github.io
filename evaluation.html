@@ -171,29 +171,98 @@
                            <strong>Giant_FLL3submission</strong> and <strong>Giant_02242021.zip</strong>, respectively.
                        </p></li>
 
-                            <strong class="text-danger">Important! </strong>&ensp;
-                       You can't get feedback if using the wrong format, since we are using auto grader.
-                       <br><br>
 
+<!--                       <li><p>-->
+<!--                           During the test phase, participants need to submit their model and paper within a week, from April 1 - April 7. It will be used for the final evaluation. Specifically, all the training materials including codes, models, and technical reports need to be sent to us before April 7, 2021. To prevent cheating on the test set, the test images will <strong>not</strong> be released to participants.-->
+<!--                       </p></li>-->
+
+                       <div class="section-title">
+                            <img src="images/example.jpg" alt="Fig. 1 Example of the landmark file">
+                            <p>Fig. 1 Example of the landmark file.</p>
+                       </div>
+
+                        <br>
+                       <h4 class="text-danger" id="finalSubmission">Important for model and paper submission</h4>
+                        <br>
 
                        <li><p>
-                           During the test phase, participants need to submit their model and paper within a week, from April 1 - April 7. It will be used for the final evaluation. Specifically, all the training materials including codes, models, and technical reports need to be sent to us before April 7, 2021. To prevent cheating on the test set, the test images will <strong>not</strong> be released to participants.
+                           During the test phase, participants need to submit their model and paper in a week.
+                           It will be used for the final evaluation. Specifically, all the training materials including codes,
+                           models, experiment environments (<code>pip freeze > ./requirements.txt</code>), external datasets,
+                           and technical reports need to be sent to us before April 7, 2021.
+                           The technical reports need to describe how to run the model in detail. More importantly,
+                           the technical report is to validate the performance of proposed algorithms.
+                           The participants should introduce the algorithms, experimental configurations, training trick clearly in the technical report.
 
                        </p></li>
 
+
                        <li><p>
-                       The authors acknowledge that if they decide to submit, the resulting curve might be used by the organizers in any related visualizations/results.
-                       The authors are prohibited from sharing the results with other contesting teams.
+                           We highly recommend every team submit their paper. Once accepted, the paper will be published
+                           at International Conference on Multimedia and Expo Workshop(ICMEW 2021).
+                           You can use the current results on the validation set to write any experiments or conclusions.
+                           We'll release the final results to you on April 30, 2020. The Camera-ready paper submission deadline will be May 7, 2021,
+                           so you still have one week to polish your paper.
                        </p></li>
+
+
+
+                       <li><p>
+
+                           The test set contains 2000 virtual-masked images and 2000 in-the-wild real-masked images,
+                           which has same names and file structure. Typically, your test code or script should have
+                           two input parameters and one output parameter. parameter1 is image directory, parameter1 is bounding box directory,
+                           parameter3 is landmark directory.
+
+                           For example, <code>python test.py ../test/picture_mask ../test/bbox ../test/landmark_teamname</code>
+
+                           <br>If you are using your own face detectors, the parameter2 is redundant.
+                           The details are shown in the following table.
+
+
+                       </li></p>
+
+
+                           <table border="1" align="center">
+                            <tr>
+                            <td></td>
+                            <td style="text-align:center;vertical-align:middle;">description</td>
+                            <td style="text-align:center;vertical-align:middle;">content</td>
+                            </tr>
+                            <tr>
+                            <td> parameter1 </td>
+                            <td> image directory </td>
+                            <td>2000 masked-face images (.jpg format)</td>
+                            </tr>
+                           <tr>
+                            <td> parameter2(optional) </td>
+                            <td> bounding box directory </td>
+                            <td>2000 masked-face images' bounding box folder(.txt format)</td>
+                            </tr>
+                           <tr>
+                            <td> parameter3 </td>
+                            <td> landmark directory </td>
+                               <td>2000 <strong>predicted</strong> 106-points landmark(.txt format)</td>
+                           </tr>
+                           </table>
+                       <br>
+
+                       <li><p>
+                           After final submission, the test results will be uniformly released to the participants
+                           on April 30th and the ranking will be announced, too.
+
+                       </li></p>
+
+
+
+
+
                    </ul>
                 </div>
             </div>
         </div>
 
-        <div class="section-title">
-            <img src="images/example.jpg" alt="Fig. 1 Example of the landmark file">
-            <p>Fig. 1 Example of the landmark file.</p>
-        </div>
+
 
 
 
