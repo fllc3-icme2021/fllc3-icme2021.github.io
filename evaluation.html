@@ -190,13 +190,15 @@
                            It will be used for the final evaluation. Specifically, all the training materials including codes,
                            models, experiment environments (<code>pip freeze > ./requirements.txt</code>), external datasets,
                            and technical reports need to be sent to us before April 7, 2021.
-                           The technical reports need to describe how to run the model in detail. More importantly,
-                           the technical report is to validate the performance of proposed algorithms.
-                           The participants should introduce the algorithms, experimental configurations, training trick clearly in the technical report.
-
+                           The technical should clearly describe how to run the model and introduce the algorithms,
+                           experimental configurations, training detail.
                        </p></li>
 
 
+                       <li><p>
+                           Participants should also submit their results on the validation set, since we need to ensure the results of our execution are consistent with yours, confirming the test phase is correct. Any team whose results we cannot reproduce or whose computational complexity or model size cannot satisfy the requirements will be disqualified.
+                       </p></li>
+                       
                        <li><p>
                            We highly recommend every team submit their paper. Once accepted, the paper will be published
                            at International Conference on Multimedia and Expo Workshop(ICMEW 2021).
@@ -210,10 +212,8 @@
                        <li><p>
 
                            The test set contains 2000 virtual-masked images and 2000 in-the-wild real-masked images,
-                           which has same names and file structure. Typically, your test code or script should have
-                           two input parameters and one output parameter. parameter1 is image directory, parameter1 is bounding box directory,
-                           parameter3 is landmark directory.
-
+                           which has same names and file structure. Typically, your test code or script should access three parameters.
+                           Parameter1 is image directory, Parameter2 is bounding box directory, and Parameter3 is predicted landmark directory
                            For example, <code>python test.py ../test/picture_mask ../test/bbox ../test/landmark_teamname</code>
 
                            <br>If you are using your own face detectors, the parameter2 is redundant.
@@ -225,7 +225,7 @@
 
                            <table border="1" align="center">
                             <tr>
-                            <td></td>
+                            <td style="text-align:center;vertical-align:middle;">parameters</td>
                             <td style="text-align:center;vertical-align:middle;">description</td>
                             <td style="text-align:center;vertical-align:middle;">content</td>
                             </tr>
@@ -235,13 +235,13 @@
                             <td>2000 masked-face images (.jpg format)</td>
                             </tr>
                            <tr>
-                            <td> parameter2(optional) </td>
+                            <td> parameter2(optional) &ensp;</td>
                             <td> bounding box directory </td>
-                            <td>2000 masked-face images' bounding box folder(.txt format)</td>
+                            <td>2000 masked-face images' bounding box folder(.txt format) &ensp;</td>
                             </tr>
                            <tr>
                             <td> parameter3 </td>
-                            <td> landmark directory </td>
+                            <td> predicted landmark directory &ensp;</td>
                                <td>2000 <strong>predicted</strong> 106-points landmark(.txt format)</td>
                            </tr>
                            </table>
