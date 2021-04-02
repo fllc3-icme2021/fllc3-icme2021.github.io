@@ -198,13 +198,16 @@
                        <li><p>
                            Participants should also submit their results on the validation set, since we need to ensure the results of our execution are consistent with yours, confirming the test phase is correct. Any team whose results we cannot reproduce or whose computational complexity or model size cannot satisfy the requirements will be disqualified.
                        </p></li>
-                       
+
                        <li><p>
                            We highly recommend every team submit their paper. Once accepted, the paper will be published
-                           at International Conference on Multimedia and Expo Workshop(ICMEW 2021).
+                           at International Conference on Multimedia and Expo Workshop (ICMEW 2021).
+                           The paper template is now available on ICME's <a href="https://2021.ieeeicme.org/author_info#General_Information">official website</a>.
+
                            You can use the current results on the validation set to write any experiments or conclusions.
                            We'll release the final results to you on April 30, 2020. The Camera-ready paper submission deadline will be May 7, 2021,
                            so you still have one week to polish your paper.
+
                        </p></li>
 
 
@@ -212,9 +215,10 @@
                        <li><p>
 
                            The test set contains 2000 virtual-masked images and 2000 in-the-wild real-masked images,
-                           which has same names and file structure. Typically, your test code or script should access three parameters.
-                           Parameter1 is image directory, Parameter2 is bounding box directory, and Parameter3 is predicted landmark directory
-                           For example, <code>python test.py ../test/picture_mask ../test/bbox ../test/landmark_teamname</code>
+                           which has the same names and file structure as validation set. Typically, your test code or script should access three parameters.
+                           Parameter1 is image directory, Parameter2 is bounding box directory, and Parameter3 is predicted landmark directory.
+
+                           <br>For example, <code>python test.py ../test/picture_mask ../test/bbox ../test/landmark_teamname</code>
 
                            <br>If you are using your own face detectors, the parameter2 is redundant.
                            The details are shown in the following table.
