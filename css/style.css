@@ -52,6 +52,23 @@ td, tr,
     text-align: center;
 }
 
+.instructor {
+  vertical-align:top;
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.instructorphoto img {
+  image-rendering: -webkit-optimize-contrast;
+  height: 150px;
+  width: 150px;
+  border-radius: 120px;
+  margin-bottom: 10px;
+}
+
+
 
 
 /*table{*/
