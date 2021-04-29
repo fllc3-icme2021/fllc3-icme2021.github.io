@@ -1,0 +1,27 @@
+Rank,Team Name,Affiliation,AUC (@0.08),Failure rate (@0.08),NME
+1,Streamax,Streamax,80.27,0.05,1.58
+2,face_landmark_iccv_2021,Bytedance,79.8,0.1,1.62
+3,PIPNet,Inception Institute of Artificial Intelligence,79.75,0.1,1.62
+4,makalo_face,Bytedance,79.38,0.1,1.65
+5,taitaitai,zhihuakeji,79.38,0.15,1.66
+6,TuringTest,Turing Lab,79.06,0.1,1.68
+7,Baocc,University of Science and Technology of China,78.81,0.1,1.7
+8,spring is coming,Tencent,78.57,0.4,1.85
+9,wangc,University of Electronic Science and Technology of China,78.45,0.1,1.73
+10,fly on earth,University of Science and Technology of China,78.26,0.15,1.75
+11,vipl-fan,"Institute of Computing Technology, Chinese Academy",77.82,0.1,1.78
+12,dibosca,None,77.66,0.15,1.79
+13,ouou,University of Chinese Academy of Sciences,77.57,0.5,1.83
+14,Aruhan,None,77.16,0.25,1.84
+15,DYMOBILE,ouyue,76.17,0.35,1.92
+16,Destination,Guilin University Of Electronic Technology,75.98,0.85,2.25
+17,byte_iccv_face,Bytedance,75.93,0.1,1.93
+18,Ethan110,xiaoyuanpai,74.36,0.3,2.06
+19,NCST,North China University of Science and Technology,74.06,0.7,2.13
+20,Smiles_XJTU,Xi'an Jiaotong University,70.93,0.6,2.34
+21,good good study,xiaoyuanpai,70.35,0.3,2.38
+22,CGO,Changzhou University,69.7,1.3,2.76
+23,akbar_xie,Xiamen University,68.68,1.45,2.57
+24,nobody,None,61.57,2,3.15
+25,AISOCLAB,National Central University,59.26,3.25,3.38
+26,A01,None,53.99,8.9,4.18

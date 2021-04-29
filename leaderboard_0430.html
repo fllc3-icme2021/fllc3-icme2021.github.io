@@ -135,9 +135,9 @@
 <div class="site-section">
     <div class="container">
         <div class="row">
-             <div class="col-lg-12" id="schedule">
+<!--             <div class="col-lg-12" id="schedule">-->
 
-            </div>
+<!--            </div>-->
 
 
 <!------------------------  leaderboard on final test set ----------------------->
@@ -147,8 +147,8 @@
             <div class="section-title">
                 <h2>leaderboard</h2>
             </div>
-            <div class="">
-                <div class="">
+<!--            <div class="">-->
+<!--                <div class="">-->
 
 <table >
     <thead>
@@ -188,8 +188,8 @@
 
             <tr>
             <td align="center">3</td>
-                <td align="center">Streamxax</td>
-                <td align="center">Streamxax</td>
+                <td align="center">Streamax</td>
+                <td align="center">Streamax</td>
                 <td align="center">62.13</td>
                 <td align="center">0.42%</td>
                 <td align="center">3.04</td>
@@ -219,16 +219,16 @@
                 <td align="center">94.53</td>
             </tr>
 
-<!--            <tr>-->
-<!--                <td align="center">6</td>-->
-<!--                <td align="center">vipl-fan</td>-->
-<!--                <td align="center">Institute of Computing Technology, <br> Chinese Academy of Sciences</td>-->
-<!--                <td align="center">46.89</td>-->
-<!--                <td align="center">23.00%</td>-->
-<!--                <td align="center">6.04</td>-->
-<!--                <td align="center">1.28</td>-->
-<!--                <td align="center">94.53</td>-->
-<!--            </tr>-->
+            <tr>
+                <td align="center">6</td>
+                <td align="center">vipl-fan</td>
+                <td align="center">Institute of Computing Technology, <br> Chinese Academy of Sciences</td>
+                <td align="center">46.89</td>
+                <td align="center">23.00%</td>
+                <td align="center">6.04</td>
+                <td align="center">1.28</td>
+                <td align="center">94.53</td>
+            </tr>
 
 </table>
                     <br>
@@ -238,41 +238,470 @@
 
 
                 </div>
+<!--            </div>-->
+<!--        </div>-->
+        </div>
+
+
+<!----------------    validation/virtual/real table    -------------------->
+        <br><br><br>
+        <div class="col-lg-12" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <h2>detailed results</h2>
             </div>
         </div>
 
 
 
-</div>
+<table >
+    <thead>
+        <tr>
+            <th width="50px" align="center" rowspan="3">Rank</th>
+            <th width="140px" align="center" rowspan="2">Team name</th>
+            <th align="center" rowspan="2">Affiliation</th>
+            <th width="210px" align="center" colspan="3">AUC*100 (@0.08)&ensp;</th>
+            <th width="210px" align="center" colspan="3">Failure rate (@0.08)</th>
+            <th width="210px" align="center" colspan="3">&ensp;NME*100&ensp;</th>
+<!--            <th width="90px" align="center">Model size <br> (MB)</th>-->
+<!--            <th align="center">Computational complexity <br> (MFLOPs)</th>-->
+        </tr>
+                <tr>
+                <td width="70px" align="center" >val</td>
+                <td width="70px" align="center">virtual</td>
+                <td width="70px" align="center">real</td>
 
-<br><br><br><br>
-        <!------------------------  leaderboard on validation ----------------------->
+                <td width="70px" align="center" >val</td>
+                <td width="70px" align="center">virtual</td>
+                <td width="70px" align="center">real</td>
 
-        <div class="col-lg-12" id="leaderboardOnValidation" style="padding-top:80px;margin-top:-80px;">
-            <div class="">
-                <h4>On the validation set</h4>
-            </div>
-            <div class="trend-entry d-flex">
-                <div class="trend-contents">
+                <td width="70px" align="center" >val</td>
+                <td width="70px" align="center">virtual</td>
+                <td width="70px" align="center">real</td>
 
+            </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td align="center">1</td>
+                <td align="center">TuringTest</td>
+                <td align="center">Vision Intelligence Center, Meituan</td>
 
-                    <div class="section-title">
-                        <img src="leaderboard/leaderboard_on_validation.png">
-                    </div>
+                <td align="center">79.05</td>
+                <td align="center">78.61</td>
+                <td align="center">49.95</td>
 
-<!--                    <div class="section-title">-->
-<!--                        <img src="leaderboard/ced_20210331.jpg">-->
-<!--                    </div>-->
-                    <p align="center">
-                    <strong class="text-danger" >Note: </strong>&ensp;
-                        click
-                    <a href="https://github.com/MitchellX/fllc3-icme2021.github.io/tree/main/leaderboard">Here</a>
-                        to review historical results
+                <td align="center">0.15%</td>
+                <td align="center">0.05%</td>
+                <td align="center">0.60%</td>
+
+                <td align="center">1.68</td>
+                <td align="center">1.71</td>
+                <td align="center">4.01</td>
+            </tr>
+
+            <tr>
+                <td align="center">2</td>
+                <td align="center">spring is coming</td>
+                <td align="center">Tencent</td>
+
+                <td align="center">78.25</td>
+                <td align="center">77.48</td>
+                <td align="center">47.76</td>
+
+                <td align="center">0.40%</td>
+                <td align="center">0.65%</td>
+                <td align="center">2.10%</td>
+
+                <td align="center">1.89</td>
+                <td align="center">2.25</td>
+                <td align="center">4.21</td>
+            </tr>
+
+            <tr>
+            <td align="center">3</td>
+                <td align="center">Streamax</td>
+                <td align="center">Streamax</td>
+
+                <td align="center">75.93</td>
+                <td align="center">75.97</td>
+                <td align="center">48.29</td>
+
+                <td align="center">0.15%</td>
+                <td align="center">0.05%</td>
+                <td align="center">0.80%</td>
+
+                <td align="center">1.93</td>
+                <td align="center">1.93</td>
+                <td align="center">4.15</td>
+            </tr>
+
+            <tr>
+                <td align="center">4</td>
+                <td align="center">byte iccv face</td>
+                <td align="center">Bytedance</td>
+
+                <td align="center">72.28</td>
+                <td align="center">70.71</td>
+                <td align="center">46.71</td>
+
+                <td align="center">0.10%</td>
+                <td align="center">0.05%</td>
+                <td align="center">0.45%</td>
+
+                <td align="center">2.22</td>
+                <td align="center">2.34</td>
+                <td align="center">4.27</td>
+            </tr>
+
+            <tr>
+                <td align="center">5</td>
+                <td align="center">ouou</td>
+                <td align="center">University of Chinese Academy of Sciences</td>
+
+                <td align="center">71.33</td>
+                <td align="center">68.45</td>
+                <td align="center">26.99</td>
+
+                <td align="center">2.40%</td>
+                <td align="center">1.60%</td>
+                <td align="center">35.24%</td>
+
+                <td align="center">1.65</td>
+                <td align="center">2.65</td>
+                <td align="center">8.71</td>
+            </tr>
+
+            <tr>
+                <td align="center">6</td>
+                <td align="center">vipl-fan</td>
+                <td align="center">Institute of Computing Technology, <br> Chinese Academy of Sciences</td>
+
+                <td align="center">74.17</td>
+                <td align="center">70.88</td>
+                <td align="center">22.90</td>
+
+                <td align="center">0.85%</td>
+                <td align="center">1.10%</td>
+                <td align="center">44.90%</td>
+
+                <td align="center">2.13</td>
+                <td align="center">2.42</td>
+                <td align="center">9.66</td>
+            </tr>
+</table>
+
+        <p align="">
+            <strong class="text-danger" >Note: </strong>&ensp;
+            The table shows the detailed results on the validation set and test set.
+            The test set consists of 2000 virtual-masked images and 2000 in-the-wild real-masked images,
+            which determines the final ranking.
         </p>
 
-                </div>
+        <div class="section-title">
+<!--            <img width="33%" src="leaderboard/6_validation.jpg">-->
+<!--            <img width="33%" src="leaderboard/6_virtual.jpg">-->
+<!--            <img width="33%" src="leaderboard/6_real.jpg">-->
+
+
+            <img width="49%" src="leaderboard/6_virtual.jpg">
+            <img width="49%" src="leaderboard/6_real.jpg">
+
+        </div>
+
+
+
+
+
+
+
+<br><br><br>
+                <!------------------------  leaderboard on validation ----------------------->
+
+        <div class="col-lg-12" id="leaderboardOnValidation" style="padding-top:80px;margin-top:-80px;">
+            <div class="section-title">
+                <h2>On the validation set</h2>
+            </div>
+            <h5>Last update: March 31, 2021</h5>
+
+
+            <table width="10%">
+                <thead>
+                    <tr>
+                        <th align="center">&ensp;Rank&ensp;</th>
+                        <th align="center">Team name</th>
+                        <th align="center">Affiliation</th>
+                        <th width="100px" align="center">AUC*100 <br>&ensp;(@0.08)&ensp;</th>
+                        <th width="100px" align="center">Failure rate <br> (@0.08)</th>
+                        <th width="100px" align="center">&ensp;NME*100&ensp;</th>
+                    </tr>
+                </thead>
+                    <tr>
+                    <td align="center">1</td>
+                    <td align="center">Streamax</td>
+                    <td align="center">Streamax</td>
+                    <td align="center">80.27</td>
+                    <td align="center">0.05%</td>
+                    <td align="center">1.58</td>
+                    </tr>
+                    <tr>
+                    <td align="center">2</td>
+                    <td align="center">face landmark iccv 2021</td>
+                    <td align="center">Bytedance</td>
+                    <td align="center">79.8</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.62</td>
+                    </tr>
+                    <tr>
+                    <td align="center">3</td>
+                    <td align="center">PIPNet</td>
+                    <td align="center">Inception Institute of Artificial Intelligence</td>
+                    <td align="center">79.75</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.62</td>
+                    </tr>
+                    <tr>
+                    <td align="center">4</td>
+                    <td align="center">makalo_face</td>
+                    <td align="center">Bytedance</td>
+                    <td align="center">79.38</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.65</td>
+                    </tr>
+                    <tr>
+                    <td align="center">5</td>
+                    <td align="center">taitaitai</td>
+                    <td align="center">zhihuakeji</td>
+                    <td align="center">79.38</td>
+                    <td align="center">0.15%</td>
+                    <td align="center">1.66</td>
+                    </tr>
+                    <tr>
+                    <td align="center">6</td>
+                    <td align="center">TuringTest</td>
+                    <td align="center">Vision Intelligence Center, Meituan</td>
+                    <td align="center">79.06</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.68</td>
+                    </tr>
+                    <tr>
+                    <td align="center">7</td>
+                    <td align="center">Baocc</td>
+                    <td align="center">University of Science and Technology of China</td>
+                    <td align="center">78.81</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.7</td>
+                    </tr>
+                    <tr>
+                    <td align="center">8</td>
+                    <td align="center">spring is coming</td>
+                    <td align="center">Tencent</td>
+                    <td align="center">78.57</td>
+                    <td align="center">0.40%</td>
+                    <td align="center">1.85</td>
+                    </tr>
+                    <tr>
+                    <td align="center">9</td>
+                    <td align="center">wangc</td>
+                    <td align="center">University of Electronic Science and Technology of China</td>
+                    <td align="center">78.45</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.73</td>
+                    </tr>
+                    <tr>
+                    <td align="center">10</td>
+                    <td align="center">fly on earth</td>
+                    <td align="center">University of Science and Technology of China</td>
+                    <td align="center">78.26</td>
+                    <td align="center">0.15%</td>
+                    <td align="center">1.75</td>
+                    </tr>
+                    <tr>
+                    <td align="center">11</td>
+                    <td align="center">vipl-fan</td>
+                    <td align="center">Institute of Computing Technology, Chinese Academy</td>
+                    <td align="center">77.82</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.78</td>
+                    </tr>
+                    <tr>
+                    <td align="center">12</td>
+                    <td align="center">dibosca</td>
+                    <td align="center">None</td>
+                    <td align="center">77.66</td>
+                    <td align="center">0.15%</td>
+                    <td align="center">1.79</td>
+                    </tr>
+                    <tr>
+                    <td align="center">13</td>
+                    <td align="center">ouou</td>
+                    <td align="center">University of Chinese Academy of Sciences</td>
+                    <td align="center">77.57</td>
+                    <td align="center">0.50%</td>
+                    <td align="center">1.83</td>
+                    </tr>
+                    <tr>
+                    <td align="center">14</td>
+                    <td align="center">Aruhan</td>
+                    <td align="center">None</td>
+                    <td align="center">77.16</td>
+                    <td align="center">0.25%</td>
+                    <td align="center">1.84</td>
+                    </tr>
+                    <tr>
+                    <td align="center">15</td>
+                    <td align="center">DYMOBILE</td>
+                    <td align="center">ouyue</td>
+                    <td align="center">76.17</td>
+                    <td align="center">0.35%</td>
+                    <td align="center">1.92</td>
+                    </tr>
+                    <tr>
+                    <td align="center">16</td>
+                    <td align="center">Destination</td>
+                    <td align="center">Guilin University Of Electronic Technology</td>
+                    <td align="center">75.98</td>
+                    <td align="center">0.85%</td>
+                    <td align="center">2.25</td>
+                    </tr>
+                    <tr>
+                    <td align="center">17</td>
+                    <td align="center">byte_iccv_face</td>
+                    <td align="center">Bytedance</td>
+                    <td align="center">75.93</td>
+                    <td align="center">0.10%</td>
+                    <td align="center">1.93</td>
+                    </tr>
+                    <tr>
+                    <td align="center">18</td>
+                    <td align="center">Ethan110</td>
+                    <td align="center">xiaoyuanpai</td>
+                    <td align="center">74.36</td>
+                    <td align="center">0.30%</td>
+                    <td align="center">2.06</td>
+                    </tr>
+                    <tr>
+                    <td align="center">19</td>
+                    <td align="center">NCST</td>
+                    <td align="center">North China University of Science and Technology</td>
+                    <td align="center">74.06</td>
+                    <td align="center">0.70%</td>
+                    <td align="center">2.13</td>
+                    </tr>
+                    <tr>
+                    <td align="center">20</td>
+                    <td align="center">Smiles_XJTU</td>
+                    <td align="center">Xi'an Jiaotong University</td>
+                    <td align="center">70.93</td>
+                    <td align="center">0.60%</td>
+                    <td align="center">2.34</td>
+                    </tr>
+                    <tr>
+                    <td align="center">21</td>
+                    <td align="center">good good study</td>
+                    <td align="center">xiaoyuanpai</td>
+                    <td align="center">70.35</td>
+                    <td align="center">0.30%</td>
+                    <td align="center">2.38</td>
+                    </tr>
+                    <tr>
+                    <td align="center">22</td>
+                    <td align="center">CGO</td>
+                    <td align="center">Changzhou University</td>
+                    <td align="center">69.7</td>
+                    <td align="center">1.30%</td>
+                    <td align="center">2.76</td>
+                    </tr>
+                    <tr>
+                    <td align="center">23</td>
+                    <td align="center">akbar_xie</td>
+                    <td align="center">Xiamen University</td>
+                    <td align="center">68.68</td>
+                    <td align="center">1.45%</td>
+                    <td align="center">2.57</td>
+                    </tr>
+                    <tr>
+                    <td align="center">24</td>
+                    <td align="center">nobody</td>
+                    <td align="center">None</td>
+                    <td align="center">61.57</td>
+                    <td align="center">2.0%</td>
+                    <td align="center">3.15</td>
+                    </tr>
+                    <tr>
+                    <td align="center">25</td>
+                    <td align="center">AISOCLAB</td>
+                    <td align="center">National Central University</td>
+                    <td align="center">59.26</td>
+                    <td align="center">3.25%</td>
+                    <td align="center">3.38</td>
+                    </tr>
+                    <tr>
+                    <td align="center">26</td>
+                    <td align="center">A01</td>
+                    <td align="center">None</td>
+                    <td align="center">53.99</td>
+                    <td align="center">8.90%</td>
+                    <td align="center">4.18</td>
+                    </tr>
+
+                    </tbody>
+            </table>
+
+
+
+
+            <p align="center">
+                <strong class="text-danger" >Note: </strong>&ensp;
+                        click
+                <a href="https://github.com/MitchellX/fllc3-icme2021.github.io/tree/main/leaderboard">Here</a>
+                to review daily results
+            </p>
+
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--        &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;  leaderboard on validation -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+<!--        <div class="col-lg-12" id="leaderboardOnValidation" style="padding-top:80px;margin-top:-80px;">-->
+<!--            <div class="section-title">-->
+<!--                <h2>Historical results</h2>-->
+<!--            </div>-->
+<!--            <h5>Last update: March 31, 2021</h5>-->
+
+<!--            <div class="trend-entry d-flex">-->
+<!--                <div class="trend-contents">-->
+
+
+<!--                    <div class="section-title">-->
+<!--                        <img src="leaderboard/leaderboard_on_validation.png">-->
+<!--                    </div>-->
+
+<!--&lt;!&ndash;                    <div class="section-title">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <img src="leaderboard/ced_20210331.jpg">&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                    <p align="center">-->
+<!--                    <strong class="text-danger" >Note: </strong>&ensp;-->
+<!--                        click-->
+<!--                    <a href="https://github.com/MitchellX/fllc3-icme2021.github.io/tree/main/leaderboard">Here</a>-->
+<!--                        to review historical results-->
+<!--        </p>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
 
